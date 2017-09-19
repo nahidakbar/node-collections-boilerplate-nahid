@@ -87,6 +87,11 @@ function collectionTester(Collection)
       });
       assert.deepEqual(record, inRecord);
     });
+    
+    it('can update field', async function ()
+    {
+      await collection.updateField({}, 'field', 'value');
+    });
 
     it('can delete', async function ()
     {

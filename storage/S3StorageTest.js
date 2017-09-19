@@ -6,7 +6,6 @@ var AWS = require('aws-sdk-mock');
 const buckets = {};
 
 AWS.mock('S3', 'listObjectsV2', function (params, callback) {
-  console.log('LIST', params);
   const bucket = buckets[params.Bucket] || {};
   const Contents = JSON.parse(JSON.stringify(Object.values(bucket)));
   Contents.forEach(item =>
