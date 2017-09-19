@@ -1,0 +1,25 @@
+{
+  "name": "node-collections-boilerplate",
+  "version": "0.1.9",
+  "description": "Reduce variability in manipulation of small to medium sized collections.",
+  "main": "Collection.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "jbn test",
+    "docs": "jbn docs",
+    "init": "jbn init",
+    "form": "jbn form",
+    "lint": "jbn lint"
+  },
+  "author": "Nahid Akbar",
+  "license": "MIT",
+  "devDependencies": {
+    "aws-sdk": "^2.111.0",
+    "elasticsearch": "^13.3.1",
+    "fs-extra": "^4.0.1",
+    "jbn": "latest",
+    "mongodb": "^2.2.31"
+  }
+}

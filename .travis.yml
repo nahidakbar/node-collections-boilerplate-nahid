@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+  - "8"
+os:
+  -linux
+services:
+  - mongodb
+  - elasticsearch
+env:
+  - MONGOSEARCH_TEST_HOST=mongodb://127.0.0.1:27017/test#test1 MONGOSTORE_TEST_HOST=mongodb://127.0.0.1:27017/test#test2 ELASTICSEARCH_TEST_HOST=127.0.0.1:9200#test
+before_script:
+  - sleep 15
+script:
+  - npm install
+  - npm run docs
+  - npm run test

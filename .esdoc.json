@@ -1,0 +1,8 @@
+{
+  "source": "./",
+  "excludes": ["(doc|docs|test|node_modules)"],
+  "destination": "./docs",
+  "plugins": [
+    {"name": "./doc/commonjs"}
+  ]
+}
