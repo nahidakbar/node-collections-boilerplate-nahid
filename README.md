@@ -20,7 +20,3 @@ Here is a simple model of how things are organised:
 
 Keep it fully tested so it can be used across production projects as well as
 prototypes.
-Take a while to set up tests etc due to the nature of the library.
-However, once you do, should be able to get pretty good coverage.
-
-![Coverage](doc/coverage.png)
