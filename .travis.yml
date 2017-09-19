@@ -11,6 +11,12 @@ env:
 before_script:
   - sleep 15
 script:
-  - npm install
   - npm run docs
   - npm run test
+deploy:
+  provider: pages
+  local_dir: node_docs
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
