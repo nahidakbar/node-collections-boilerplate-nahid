@@ -204,7 +204,6 @@ class ElasticSearch extends Search
    */
   searchRecords(inquery)
   {
-    const primaryKey = this.primaryKey;
     const searchMeta = this.searchMeta;
     return new Promise((resolve, reject) =>
     {
@@ -222,23 +221,24 @@ class ElasticSearch extends Search
       {
         inquery.filter.forEach(infilter =>
         {
-          switch (infilter.filter)
+          if (infilter.filter === 'equals')
           {
-          case 'equals':
             let term = {};
             term[infilter.field] = infilter.value[0];
             query.push({
               term
             })
-            break;
-          case 'within':
+          }
+          else if (infilter.filter === 'within')
+          {
             let terms = {};
             terms[infilter.field] = infilter.value;
             query.push({
               terms
             })
-            break;
-          case 'regex':
+          }
+          else if (infilter.filter === 'regex')
+          {
             let regexp = {};
             regexp[infilter.field] = infilter.value[0];
             if (regexp[infilter.field].match(/^\^/))
@@ -252,8 +252,9 @@ class ElasticSearch extends Search
             query.push({
               regexp
             })
-            break;
-          case 'search':
+          }
+          else if (infilter.filter === 'search')
+          {
             let query_string = {};
             query_string.query = infilter.value[0];
             if (searchMeta.searchWeights)
@@ -265,8 +266,9 @@ class ElasticSearch extends Search
             query.push({
               query_string
             })
-            break;
-          default:
+          }
+          else
+          {
             console.error('Unhandelled Filter', infilter);
           }
         });

@@ -13,6 +13,7 @@ before_script:
 script:
   - npm run docs
   - npm run test
+  - npm run lint  
 deploy:
   provider: pages
   local_dir: node_docs

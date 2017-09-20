@@ -116,7 +116,7 @@ class Storage extends EventEmitter
       let updated = false;
       try
       {
-        let updated = await this.updateCheckImpl();
+        updated = await this.updateCheckImpl();
       }
       catch (e)
       {

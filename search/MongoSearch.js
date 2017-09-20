@@ -11,7 +11,6 @@
 "use strict";
 
 const Search = require('./Search');
-const mongodb = require('mongodb');
 const MongoStorage = require('../storage/MongoStorage');
 
 /**
@@ -213,7 +212,7 @@ class MongoSearch extends Search
 
       search.map(x => (typeof primaryKey === 'string') ? x[primaryKey] : x)
         .toArray()
-        .then(resolve);
+        .then(resolve, reject);
     });
   }
 
