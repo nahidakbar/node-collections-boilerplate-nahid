@@ -148,7 +148,7 @@ class MongoSearch extends Search
           break;
         default:
           console.error('Unhandelled Filter', infilter);
-        };
+        }
       });
 
       if (query.length === 0)

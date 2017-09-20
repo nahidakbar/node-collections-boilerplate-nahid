@@ -94,7 +94,7 @@ class ElasticSearch extends Search
               body: {
                 properties
               },
-            });;
+            });
           }
 
           function analyse()
@@ -268,7 +268,7 @@ class ElasticSearch extends Search
             break;
           default:
             console.error('Unhandelled Filter', infilter);
-          };
+          }
         });
       }
 
