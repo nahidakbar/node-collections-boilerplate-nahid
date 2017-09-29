@@ -134,17 +134,20 @@ class DynamoStorage extends Storage
     for (let key in record)
     {
       let value = record[key];
-      if (key === that.primaryKey)
+      if (value !== undefined)
       {
-        update[key] = {
-          "S": value
-        };
-      }
-      else
-      {
-        update[key] = {
-          "S": JSON.stringify(value)
-        };
+        if (key === that.primaryKey)
+        {
+          update[key] = {
+            "S": value
+          };
+        }
+        else
+        {
+          update[key] = {
+            "S": JSON.stringify(value)
+          };
+        }
       }
     }
     await this.db.putItem({
