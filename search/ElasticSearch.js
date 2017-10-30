@@ -88,6 +88,17 @@ class ElasticSearch extends Search
               properties[field].fielddata = true;
               properties[field].analyzer = "my_analyzer";
             });
+            let sorts = searchMeta.sort || [];
+            sorts.forEach(field =>
+            {
+              properties[field] = properties[field] || {
+                type: "text",
+              };
+              if (properties[field].type === 'text')
+              {
+                properties[field].fielddata = true;
+              }
+            });
             return that.client.indices.putMapping({
               index: that.collectionName,
               type: that.collectionName,

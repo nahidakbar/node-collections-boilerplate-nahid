@@ -187,6 +187,26 @@ function advancedSearchTests(Search, options)
       });
       assert.equal(results.length, 5)
     });
+    
+    it('can sort asc 2', async function ()
+    {
+      let results = await search.searchRecords({
+        filter: [],
+        sort: 'hierarchy',
+        order: 'asc',
+      });
+      assert.equal(results.length, 5)
+    });
+
+    it('can sort dsc 2', async function ()
+    {
+      let results = await search.searchRecords({
+        filter: [],
+        sort: 'hierarchy',
+        order: 'dsc',
+      });
+      assert.equal(results.length, 5)
+    });
 
     async function termSearch(term, field = 'search', filter = 'search')
     {
