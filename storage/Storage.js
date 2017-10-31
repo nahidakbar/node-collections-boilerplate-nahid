@@ -130,9 +130,9 @@ class Storage extends EventEmitter
       {
         currentTimeout = Math.min(currentTimeout * this.updateIntervalSlowdownRate, this.updateIntervalMax);
       }
-      this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout);
+      this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout).unref();
     }
-    this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout);
+    this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout).unref();
   }
 
   /**
