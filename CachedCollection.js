@@ -78,9 +78,12 @@ class CachedCollection extends Collection
     record = this.lookup[record[this.primaryKey]];
     if (!record)
     {
-      throw new Error('Not found');
+      return super.readRecord(record);
     }
-    return this.lookup[record[this.primaryKey]];
+    else
+    {
+      return this.lookup[record[this.primaryKey]];
+    }
   }
 
   /**
