@@ -111,6 +111,18 @@ function collectionTester(Collection)
       }
       throw new Error('FAIL');
     });
+    
+    it('can read non-in-cache', async function ()
+    {
+      const id = '5';
+      collection.storage.array.push({
+        id,
+      });
+      const returned  = await collection.readRecord({
+        id
+      });
+      assert.deepEqual(id, returned.id)
+    });
 
     it('can search', async function ()
     {

@@ -75,14 +75,20 @@ class CachedCollection extends Collection
    */
   async readRecord(record)
   {
-    record = this.lookup[record[this.primaryKey]];
-    if (!record)
+    let read = this.lookup[record[this.primaryKey]];
+    if (!read)
     {
-      return super.readRecord(record);
+      record = await super.readRecord(record);
+      if (record)
+      {
+        this.lookup[record[this.primaryKey]] = record;
+        this.search.createRecord(record).then(x => x, console.log.bind(console));
+      }
+      return record;
     }
     else
     {
-      return this.lookup[record[this.primaryKey]];
+      return read;
     }
   }
 
