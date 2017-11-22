@@ -3,11 +3,15 @@
 const AWS = require('aws-sdk');
 const Storage = require('./Storage');
 
+const dynamoDecodeRecord = require('./dynamoDecodeRecord');
+const dynamoEncodeRecord = require('./dynamoEncodeRecord');
+const StreamsNotifier = require('./DynamoStorageStreamNotifier');
+
 /**
  * Use a AWS DynamoDB table as storage.
- * 
+ *
  * Pretty pointless storage system but have some legacy data in it.
- * 
+ *
  * Needs ```aws-sdk``` package.
  */
 class DynamoStorage extends Storage
@@ -27,6 +31,28 @@ class DynamoStorage extends Storage
       endpoint: this.connectionString ? new AWS.Endpoint(this.connectionString) : undefined,
       region: this.region
     });
+
+    /**
+     * Set it to true to use streams for receiving data updates.
+     * @type {boolean}
+     */
+    this.useStreams = options.useStreams || false;
+    if (this.useStreams)
+    {
+      /** @private */
+      this.notifier = new StreamsNotifier(this);
+      /** @private */
+      this.updateCheckImpl = this.notifier.updateCheck.bind(this.notifier);
+    }
+  }
+
+  async connect()
+  {
+    if (this.notifier)
+    {
+      await this.notifier.connect();
+    }
+    await super.connect();
   }
 
   /** @override */
@@ -64,19 +90,7 @@ class DynamoStorage extends Storage
             {
               items = items.map(record =>
               {
-                for (let key in record)
-                {
-                  let value = record[key].S;
-                  if (key === that.primaryKey)
-                  {
-                    record[key] = value;
-                  }
-                  else
-                  {
-                    record[key] = JSON.parse(value);
-                  }
-                }
-                return record;
+                return dynamoDecodeRecord(record, that.primaryKey);
               });
               resolve(items);
             }
@@ -107,52 +121,19 @@ class DynamoStorage extends Storage
       .promise();
 
     data = data.Item;
-    if (!data)
-    {
-      throw new Error('not found');
-    }
-    for (let key in data)
-    {
-      let value = data[key].S;
-      if (key === this.primaryKey)
-      {
-        data[key] = value;
-      }
-      else
-      {
-        data[key] = JSON.parse(value);
-      }
-    }
-    return data;
+    // if (!data)
+    // {
+    //   throw new Error('not found');
+    // }
+    return dynamoDecodeRecord(data, this.primaryKey);
   }
 
   /** @override */
   async updateRecord(record)
   {
-    let that = this;
-    let update = {};
-    for (let key in record)
-    {
-      let value = record[key];
-      if (value !== undefined)
-      {
-        if (key === that.primaryKey)
-        {
-          update[key] = {
-            "S": value
-          };
-        }
-        else
-        {
-          update[key] = {
-            "S": JSON.stringify(value)
-          };
-        }
-      }
-    }
     await this.db.putItem({
         TableName: this.collectionName,
-        Item: update
+        Item: dynamoEncodeRecord(record, this.primaryKey)
       })
       .promise();
     return record;

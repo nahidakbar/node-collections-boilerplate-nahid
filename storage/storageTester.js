@@ -25,7 +25,7 @@ function clone(obj)
 
 function storageTester(Storage, options)
 {
-  describe(Storage.name, function ()
+  describe(`${Storage.name}: ${JSON.stringify(options)}`, function ()
   {
     let storage;
     let variable;

@@ -38,14 +38,17 @@ class Storage extends EventEmitter
     }
     /**
      * Minimum duration between updates in ms
+     * @type {number}
      */
     this.updateInterval = options.updateInterval || ONE_MINUTE_MS;
     /**
      * Maximum duration between updates in ms
+     * @type {number}
      */
     this.updateIntervalMax = options.updateIntervalMax || FIFTEEN_MINUTES_MS;
     /**
      * Rate at which update checks are slowed down when there are no updates.
+     * @type {number}
      */
     this.updateIntervalSlowdownRate = options.updateIntervalSlowdownRate || ONE_PERCENT_RATIO;
   }
@@ -137,9 +140,9 @@ class Storage extends EventEmitter
 
   /**
    * Implmentation of update checking.
-   * 
+   *
    * Override this if storage has more efficient way of checking for updates.
-   * 
+   *
    * @abstract
    */
   async updateCheckImpl()
