@@ -1,6 +1,6 @@
 /**
  * @file
- * 
+ *
  * @author Nahid Akbar
  * @year 2016
  * @copyright Data61 -
@@ -86,7 +86,7 @@ class ElasticSearch extends Search
               };
               properties[field].type = "text";
               properties[field].fielddata = true;
-              properties[field].analyzer = "my_analyzer";
+              properties[field].analyzer = "fulltext_analyzer";
             });
             let sorts = searchMeta.sort || [];
             sorts.forEach(field =>
@@ -94,6 +94,13 @@ class ElasticSearch extends Search
               properties[field] = properties[field] || {
                 type: "text",
               };
+              properties[field].fields = {
+                case_insensitive: {
+                  "type":     "string",
+                  "analyzer": "case_insensitive",
+                  fielddata: true
+                }
+              }
               if (properties[field].type === 'text')
               {
                 properties[field].fielddata = true;
@@ -123,9 +130,13 @@ class ElasticSearch extends Search
                         "settings": {
                           "analysis": {
                             "analyzer": {
-                              "my_analyzer": {
+                              "fulltext_analyzer": {
                                 "tokenizer": "standard",
                                 "filter": ["standard", "lowercase", "asciifolding", "porter_stem"]
+                              },
+                              "case_insensitive": {
+                                "tokenizer": "keyword",
+                                "filter":  [ "lowercase", "asciifolding" ]
                               }
                             }
                           }
@@ -273,7 +284,7 @@ class ElasticSearch extends Search
               query_string.fields = Object.keys(searchMeta.searchWeights)
                 .map(key => `${key}^${searchMeta.searchWeights[key]}`);
             }
-            query_string.analyzer = "my_analyzer";
+            query_string.analyzer = "fulltext_analyzer";
             query.push({
               query_string
             })
@@ -302,14 +313,16 @@ class ElasticSearch extends Search
         query
       };
 
+      body.sort = {};
       if (!inquery.sort || inquery.sort === "search")
       {
-        body.sort = "_score";
+        inquery.sort = '_score';
       }
       else
       {
-        body.sort = inquery.sort;
+        inquery.sort += '.case_insensitive'
       }
+      body.sort[inquery.sort] = inquery.order === 'dsc'? 'desc' : 'asc';
       this.client.search({
           index: this.collectionName,
           body,
