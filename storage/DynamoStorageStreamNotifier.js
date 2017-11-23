@@ -22,8 +22,10 @@ class DynamoStorageStreamNotifier
   {
     // extract StreamArn with ListStreams
     const streams = (await this.stream.listStreams({
-      TableName: this.storage.collectionName
-    }).promise()).Streams || [];
+          TableName: this.storage.collectionName
+        })
+        .promise())
+      .Streams || [];
     if (streams.length === 0)
     {
       throw new Error(`Stream is not found for table '${this.storage.collectionName}'.`);
@@ -35,9 +37,11 @@ class DynamoStorageStreamNotifier
     let stream;
     do {
       stream = (await this.stream.describeStream({
-        StreamArn: this.streamArn,
-        ExclusiveStartShardId: lastEvaluatedShardId
-      }).promise()).StreamDescription;
+            StreamArn: this.streamArn,
+            ExclusiveStartShardId: lastEvaluatedShardId
+          })
+          .promise())
+        .StreamDescription;
       lastEvaluatedShardId = stream.LastEvaluatedShardId;
     } while (stream.LastEvaluatedShardId);
     let shards = stream.Shards;
@@ -46,11 +50,12 @@ class DynamoStorageStreamNotifier
 
     // find the latest shard iterator
     let iterator = await this.stream.getShardIterator({
-      StreamArn: this.streamArn,
-      ShardId: this.shardId,
-      ShardIteratorType: 'LATEST'
-      //ShardIteratorType: 'TRIM_HORIZON'
-    }).promise();
+        StreamArn: this.streamArn,
+        ShardId: this.shardId,
+        ShardIteratorType: 'LATEST'
+        //ShardIteratorType: 'TRIM_HORIZON'
+      })
+      .promise();
     this.shardIterator = iterator.ShardIterator;
   }
 
@@ -60,17 +65,21 @@ class DynamoStorageStreamNotifier
     {
       // get next shard iterator
       const shards = (await this.stream.describeStream({
-        StreamArn: this.streamArn,
-        ExclusiveStartShardId: this.shardId
-      }).promise()).StreamDescription.Shards;
+            StreamArn: this.streamArn,
+            ExclusiveStartShardId: this.shardId
+          })
+          .promise())
+        .StreamDescription.Shards;
       if (shards.length > 0)
       {
         this.shardId = shards[0].ShardId;
         this.shardIterator = (await this.stream.getShardIterator({
-          StreamArn: this.streamArn,
-          ShardId: this.shardId,
-          ShardIteratorType: 'TRIM_HORIZON'
-        }).promise()).ShardIterator;
+              StreamArn: this.streamArn,
+              ShardId: this.shardId,
+              ShardIteratorType: 'TRIM_HORIZON'
+            })
+            .promise())
+          .ShardIterator;
       }
       else
       {
@@ -78,22 +87,24 @@ class DynamoStorageStreamNotifier
       }
     }
     const records = await this.stream.getRecords({
-      ShardIterator: this.shardIterator
-    }).promise();
+        ShardIterator: this.shardIterator
+      })
+      .promise();
     for (let record of records.Records)
     {
-      switch (record.eventName) {
-        case 'INSERT':
-          this.storage.emit('create', dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));
-          break;
-        case 'MODIFY':
-          this.storage.emit('update', dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));
-          break;
-        case 'REMOVE':
-          this.storage.emit('delete', dynamoDecodeRecord(record.dynamodb.Keys, this.storage.primaryKey));
-          break;
-        default:
-          console.log('[ERROR] TODO: process', record);
+      switch (record.eventName)
+      {
+      case 'INSERT':
+        this.storage.emit('create', dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));
+        break;
+      case 'MODIFY':
+        this.storage.emit('update', dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));
+        break;
+      case 'REMOVE':
+        this.storage.emit('delete', dynamoDecodeRecord(record.dynamodb.Keys, this.storage.primaryKey));
+        break;
+      default:
+        console.log('[ERROR] TODO: process', record);
       }
     }
     this.shardIterator = records.NextShardIterator;

@@ -1,6 +1,6 @@
 "use strict"
 
-module.exports = function(record, primaryKey)
+module.exports = function (record, primaryKey)
 {
   let decoded = {};
   for (let key in record)

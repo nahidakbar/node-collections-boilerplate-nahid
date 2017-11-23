@@ -96,7 +96,7 @@ class ElasticSearch extends Search
               };
               properties[field].fields = {
                 case_insensitive: {
-                  "type":     "string",
+                  "type": "string",
                   "analyzer": "case_insensitive",
                   fielddata: true
                 }
@@ -136,7 +136,7 @@ class ElasticSearch extends Search
                               },
                               "case_insensitive": {
                                 "tokenizer": "keyword",
-                                "filter":  [ "lowercase", "asciifolding" ]
+                                "filter": ["lowercase", "asciifolding"]
                               }
                             }
                           }
@@ -322,7 +322,7 @@ class ElasticSearch extends Search
       {
         inquery.sort += '.case_insensitive'
       }
-      body.sort[inquery.sort] = inquery.order === 'dsc'? 'desc' : 'asc';
+      body.sort[inquery.sort] = inquery.order === 'dsc' ? 'desc' : 'asc';
       this.client.search({
           index: this.collectionName,
           body,

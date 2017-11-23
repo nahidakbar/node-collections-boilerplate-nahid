@@ -1,6 +1,6 @@
 "use strict"
 
-module.exports = function(record, primaryKey)
+module.exports = function (record, primaryKey)
 {
   let update = {};
   for (let key in record)

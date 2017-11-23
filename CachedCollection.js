@@ -82,7 +82,8 @@ class CachedCollection extends Collection
       if (record)
       {
         this.lookup[record[this.primaryKey]] = record;
-        this.search.createRecord(record).then(x => x, console.log.bind(console));
+        this.search.createRecord(record)
+          .then(x => x, console.log.bind(console));
       }
       return record;
     }

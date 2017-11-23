@@ -187,7 +187,7 @@ function advancedSearchTests(Search, options)
       });
       assert.equal(results.length, 5)
     });
-    
+
     it('can sort asc 2', async function ()
     {
       let results = await search.searchRecords({

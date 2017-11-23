@@ -87,7 +87,7 @@ function collectionTester(Collection)
       });
       assert.deepEqual(record, inRecord);
     });
-    
+
     it('can update field', async function ()
     {
       await collection.updateField({}, 'field', 'value');
@@ -111,14 +111,14 @@ function collectionTester(Collection)
       }
       throw new Error('FAIL');
     });
-    
+
     it('can read non-in-cache', async function ()
     {
       const id = '5';
       collection.storage.array.push({
         id,
       });
-      const returned  = await collection.readRecord({
+      const returned = await collection.readRecord({
         id
       });
       assert.deepEqual(id, returned.id)
