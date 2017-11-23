@@ -1,6 +1,6 @@
 {
   "name": "node-collections-boilerplate",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "Reduce variability in manipulation of small to medium sized collections.",
   "main": "Collection.js",
   "directories": {
