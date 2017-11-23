@@ -1,0 +1,4300 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "node-collections-boilerplate-nahid/.external-ecmascript.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/CachedCollection.js",
+    "content": "\"use strict\";\n\nconst Collection = require('./Collection');\n\n/**\n * In memory version of collection.\n * \n * Since all the data is in memory, it also does basic facets analysis.\n */\nclass CachedCollection extends Collection\n{\n  /**\n   * Builds up records in mmory.\n   * Sets up event listeners to keep everything up to date.\n   * @override\n   */\n  async initialise()\n  {\n    let records = await super.initialise();\n    /**\n     * Mappint of primary key to records\n     * @type {Map<string,Record>}\n     */\n    this.lookup = {};\n\n    // populate lookup list\n    for (let record of records)\n    {\n      let pkValue = record[this.primaryKey]\n      this.lookup[pkValue] = record;\n    }\n\n    // set up listeners\n    this.storage.on('create', record =>\n    {\n      console.log('NOTIFY CREATED', this.collectionName, record[this.primaryKey]);\n      this.lookup[record[this.primaryKey]] = record;\n      this.search.createRecord(record)\n        .then(x => x, console.log.bind(console));\n    });\n    this.storage.on('update', record =>\n    {\n      console.log('NOTIFY UPDATED', this.collectionName, record[this.primaryKey]);\n      this.lookup[record[this.primaryKey]] = record;\n      this.search.updateRecord(record)\n        .then(x => x, console.log.bind(console));\n    });\n\n    this.storage.on('delete', record =>\n    {\n      console.log('NOTIFY DELETED', this.collectionName, record[this.primaryKey]);\n      delete this.lookup[record[this.primaryKey]];\n      this.search.deleteRecord(record)\n        .then(x => x, console.log.bind(console));\n    });\n\n    // install updater\n    // see if storage has some clever way of receiving updates\n    this.storage.startRecordUpdateCheck()\n\n    return records;\n  }\n\n  /**\n   * @override\n   */\n  createRecord(record)\n  {\n    this.lookup[record[this.primaryKey]] = record;\n    return super.createRecord(record);\n  }\n\n  /**\n   * @override\n   */\n  async readRecord(record)\n  {\n    let read = this.lookup[record[this.primaryKey]];\n    if (!read)\n    {\n      record = await super.readRecord(record);\n      if (record)\n      {\n        this.lookup[record[this.primaryKey]] = record;\n        this.search.createRecord(record)\n          .then(x => x, console.log.bind(console));\n      }\n      return record;\n    }\n    else\n    {\n      return read;\n    }\n  }\n\n  /**\n   * @override\n   */\n  updateRecord(record)\n  {\n    this.lookup[record[this.primaryKey]] = record;\n    return super.updateRecord(record);\n  }\n\n  /**\n   * @override\n   */\n  deleteRecord(record)\n  {\n    try\n    {\n      delete this.lookup[record[this.primaryKey]];\n    }\n    catch (e)\n    {\n      console.log(e)\n    }\n    return super.deleteRecord(record);\n  }\n\n  /**\n   * @override\n   */\n  searchRecords(query)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      let offset = query.offset;\n      delete query.offset;\n      let limit = query.limit;\n      delete query.limit;\n      this.search.searchRecords(query)\n        .then(records =>\n        {\n          let results = {\n            results: records,\n            total: records.length,\n            offset: offset,\n          };\n\n          if (query.returnFacets)\n          {\n            let facets = {};\n            for (let facet of this.searchMeta.facets)\n            {\n              facets[facet] = {};\n            }\n            for (let id of records)\n            {\n              let record = this.lookup[id];\n              for (let facet of this.searchMeta.facets)\n              {\n                let facetValues = (record[facet] || []);\n                if (typeof facetValues === 'string')\n                {\n                  let value = facetValues;\n                  facets[facet][value] = (facets[facet][value] || 0) + 1;\n                }\n                else\n                {\n                  for (let value of facetValues)\n                  {\n                    facets[facet][value] = (facets[facet][value] || 0) + 1;\n                  }\n                }\n              }\n            }\n            results.facets = facets;\n          }\n\n          if (query.sort)\n          {\n            results.sort = query.sort;\n            results.order = query.order;\n          }\n          records = records.splice(offset, limit);\n          records = records.map(id =>\n          {\n            let query = {};\n            query[this.primaryKey] = id;\n            return this.readRecord(query);\n          });\n          Promise.all(records)\n            .then(records =>\n            {\n              results.results = records.map(x => this.stripRecord(x, query.extra));\n              resolve(results);\n            }, reject);\n        }, reject);\n    });\n  }\n\n}\n\nmodule.exports = CachedCollection;\n\nCachedCollection.create = Collection.create;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/CachedCollection.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "variable",
+    "name": "Collection",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~Collection",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/CachedCollection.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 50,
+    "kind": "class",
+    "name": "CachedCollection",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/CachedCollection.js",
+    "importStyle": "CachedCollection",
+    "description": "In memory version of collection.\n\nSince all the data is in memory, it also does basic facets analysis.",
+    "lineNumber": 10,
+    "interface": false,
+    "extends": [
+      "Collection"
+    ]
+  },
+  {
+    "__docId__": 51,
+    "kind": "method",
+    "name": "initialise",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection#initialise",
+    "access": "public",
+    "description": "Builds up records in mmory.\nSets up event listeners to keep everything up to date.",
+    "lineNumber": 17,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "member",
+    "name": "lookup",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection#lookup",
+    "access": "public",
+    "description": "Mappint of primary key to records",
+    "lineNumber": 24,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Map<string,Record>"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection#createRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 67,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection#readRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 76,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 55,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection#updateRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 99,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 56,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection#deleteRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 108,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "searchRecords",
+    "memberof": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection#searchRecords",
+    "access": "public",
+    "description": "",
+    "lineNumber": 124,
+    "override": true,
+    "params": [
+      {
+        "name": "query",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/Collection.js",
+    "content": "\"use strict\";\n\n/**\n * Should be the class that programs interact with.\n * \n * It should take care of syncing data between storage and search.\n */\nclass Collection\n{\n\n  /**\n   * @param {object} options; see public fields for details\n   */\n  constructor(options)\n  {\n    /**\n     * where data is stored\n     * @type {Storage}\n     */\n    this.storage = options.storage;\n    /**\n     * instance of Search\n     * @type {Search}\n     */\n    this.search = options.search;\n    /**\n     * name of collection\n     * @type {?string}\n     */\n    this.collectionName = options.collectionName || options.storage.collectionName || 'unspecified'; // optional\n    /**\n     * id field of records\n     * @type {string}\n     */\n    this.primaryKey = options.primaryKey || 'id';\n    /**\n     * search definition\n     * @type {SearchMeta}\n     */\n    this.searchMeta = options.searchMeta || {};\n  }\n\n  /**\n   * Call this to connect to storage units and search\n   */\n  async initialise()\n  {\n    await this.storage.connect();\n    const records = await this.storage.readAllRecords();\n    await this.search.initialise(this.searchMeta, records);\n    return records;\n  }\n\n  /**\n   * Helper creation method\n   */\n  static create(storage, search, Class)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      let pimaryKey = Class.pimaryKey;\n      let searchMeta = Class.searchMeta;\n      let collection = new Class({\n        storage,\n        search,\n        pimaryKey,\n        searchMeta\n      });\n      collection.initialise()\n        .then(() => resolve(collection), reject);\n    });\n  }\n\n  /**\n   * Add a new record to collection.\n   */\n  async createRecord(record)\n  {\n    record = await this.storage.createRecord(record);\n    console.log('CREATED', this.collectionName, record[this.primaryKey]);\n    await this.search.createRecord(record);\n    return record;\n  }\n\n  /**\n   * Read an existing record.\n   */\n  readRecord(record)\n  {\n    return this.storage.readRecord(record);\n  }\n\n  /**\n   * Update an existing record.\n   */\n  async updateRecord(record)\n  {\n    record = await this.storage.updateRecord(record);\n    console.log('UPDATED', this.collectionName, record[this.primaryKey]);\n    await this.search.updateRecord(record);\n    return record;\n  }\n\n  /**\n   * Update field of a record.\n   * \n   * Override this to inject custom processing rules.\n   */\n  updateField(record, field, value)\n  {\n    record[field] = value;\n  }\n\n  /**\n   * Delete a record from collection\n   */\n  async deleteRecord(record)\n  {\n    record = await this.storage.deleteRecord(record);\n    console.log('DELETED', this.collectionName, record[this.primaryKey]);\n    await this.search.deleteRecord(record);\n    return record\n  }\n\n  /**\n   * Search for records in collection using query.\n   */\n  async searchRecords(query)\n  {\n    let offset = query.offset;\n    delete query.offset;\n    let limit = query.limit;\n    delete query.limit;\n    let records = await this.search.searchRecords(query);\n    let results = {\n      results: records,\n      total: records.length,\n      offset: offset,\n    };\n    if (query.sort)\n    {\n      results.sort = query.sort;\n      results.order = query.order;\n    }\n    records = records.splice(offset, limit);\n    records = records.map(id =>\n    {\n      const query = {};\n      query[this.primaryKey] = id;\n      return this.readRecord(query);\n    });\n    records = await Promise.all(records);\n    return {\n      results: records.map(x => this.stripRecord(x, query.extra))\n    };\n  }\n\n  /**\n   * Strips a record to return as search result.\n   */\n  stripRecord(record, extra = [])\n  {\n    let out = {};\n    out[this.primaryKey] = record[this.primaryKey];\n    for (let field in this.searchMeta.fields)\n    {\n      let value = record[field];\n      if (value !== undefined)\n      {\n        out[field] = value;\n      }\n    }\n    for (let field of extra)\n    {\n      let value = record[field];\n      if (value !== undefined)\n      {\n        out[field] = value;\n      }\n    }\n    return out;\n  }\n}\n\nmodule.exports = Collection;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/Collection.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "class",
+    "name": "Collection",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/Collection.js",
+    "importStyle": "Collection",
+    "description": "Should be the class that programs interact with.\n\nIt should take care of syncing data between storage and search.",
+    "lineNumber": 8,
+    "interface": false
+  },
+  {
+    "__docId__": 60,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "object"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options;",
+        "description": "see public fields for details"
+      }
+    ]
+  },
+  {
+    "__docId__": 61,
+    "kind": "member",
+    "name": "storage",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#storage",
+    "access": "public",
+    "description": "where data is stored",
+    "lineNumber": 20,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Storage"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "search",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#search",
+    "access": "public",
+    "description": "instance of Search",
+    "lineNumber": 25,
+    "type": {
+      "nullable": null,
+      "types": [
+        "Search"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "member",
+    "name": "collectionName",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#collectionName",
+    "access": "public",
+    "description": "name of collection",
+    "lineNumber": 30,
+    "type": {
+      "nullable": true,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "member",
+    "name": "primaryKey",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#primaryKey",
+    "access": "public",
+    "description": "id field of records",
+    "lineNumber": 35,
+    "type": {
+      "nullable": null,
+      "types": [
+        "string"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "member",
+    "name": "searchMeta",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#searchMeta",
+    "access": "public",
+    "description": "search definition",
+    "lineNumber": 40,
+    "type": {
+      "nullable": null,
+      "types": [
+        "SearchMeta"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "initialise",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#initialise",
+    "access": "public",
+    "description": "Call this to connect to storage units and search",
+    "lineNumber": 46,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "create",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection.create",
+    "access": "public",
+    "description": "Helper creation method",
+    "lineNumber": 57,
+    "params": [
+      {
+        "name": "storage",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "search",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "Class",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#createRecord",
+    "access": "public",
+    "description": "Add a new record to collection.",
+    "lineNumber": 77,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#readRecord",
+    "access": "public",
+    "description": "Read an existing record.",
+    "lineNumber": 88,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#updateRecord",
+    "access": "public",
+    "description": "Update an existing record.",
+    "lineNumber": 96,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "method",
+    "name": "updateField",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#updateField",
+    "access": "public",
+    "description": "Update field of a record.\n\nOverride this to inject custom processing rules.",
+    "lineNumber": 109,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "field",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 72,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#deleteRecord",
+    "access": "public",
+    "description": "Delete a record from collection",
+    "lineNumber": 117,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 73,
+    "kind": "method",
+    "name": "searchRecords",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#searchRecords",
+    "access": "public",
+    "description": "Search for records in collection using query.",
+    "lineNumber": 128,
+    "params": [
+      {
+        "name": "query",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "{\"results\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 74,
+    "kind": "method",
+    "name": "stripRecord",
+    "memberof": "node-collections-boilerplate-nahid/Collection.js~Collection",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/Collection.js~Collection#stripRecord",
+    "access": "public",
+    "description": "Strips a record to return as search result.",
+    "lineNumber": 161,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "extra",
+        "optional": true,
+        "types": [
+          "*[]"
+        ],
+        "defaultRaw": [],
+        "defaultValue": "[]"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 75,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "content": "/**\n * @file\n *\n * @author Nahid Akbar\n * @year 2016\n * @copyright Data61 -\n *            Commonwealth Scientific and Industrial Research Organisation (CSIRO) -\n *            Australian Government. All rights reserved.\n */\n\n\"use strict\";\n\nconst Search = require('./Search');\nconst elasticsearch = require('elasticsearch');\n\n/**\n * Search using ElasticSearch.\n * Needs to be revised at 10000 records.\n * Needs ```elasticsearch``` package.\n */\nclass ElasticSearch extends Search\n{\n  /**\n   * @override\n   */\n  async connect()\n  {\n    /**\n     * reference to driver object\n     */\n    this.client = new elasticsearch.Client({\n      host: this.connectionString,\n      maxRetries: 90 * 1024,\n      maxSockets: 1,\n      requestTimeout: 1024 * 1024,\n      sniffOnConnectionFault: true\n    });\n    try\n    {\n      await this.client.indices.delete({\n        index: this.collectionName,\n      });\n    }\n    catch (e)\n    {\n      // might fail if this is the first time\n    }\n  }\n\n  /**\n   * @override\n   */\n  initialise(searchMeta, records)\n  {\n    /** store for later use */\n    this.searchMeta = searchMeta;\n    return new Promise((resolve, reject) =>\n    {\n      this.client.indices.create({\n          index: this.collectionName,\n        })\n        .then(() =>\n        {\n          let that = this;\n\n          function upload()\n          {\n            resolve(Promise.all(records.map(record => that.createRecord(record))));\n          }\n\n          function sort()\n          {\n            let properties = {};\n            let fields = searchMeta.fields || {};\n            Object.keys(fields)\n              .filter(f => !fields[f].dummy)\n              .forEach(field => properties[field] = {\n                type: \"keyword\"\n              });\n            let weights = Object.keys(searchMeta.searchWeights || {});\n            weights.forEach(field =>\n            {\n              properties[field] = properties[field] || {\n                type: \"text\",\n                fielddata: true\n              };\n              properties[field].type = \"text\";\n              properties[field].fielddata = true;\n              properties[field].analyzer = \"fulltext_analyzer\";\n            });\n            let sorts = searchMeta.sort || [];\n            sorts.forEach(field =>\n            {\n              properties[field] = properties[field] || {\n                type: \"text\",\n              };\n              properties[field].fields = {\n                case_insensitive: {\n                  \"type\": \"string\",\n                  \"analyzer\": \"case_insensitive\",\n                  fielddata: true\n                }\n              }\n              if (properties[field].type === 'text')\n              {\n                properties[field].fielddata = true;\n              }\n            });\n            return that.client.indices.putMapping({\n              index: that.collectionName,\n              type: that.collectionName,\n              body: {\n                properties\n              },\n            });\n          }\n\n          function analyse()\n          {\n            return new Promise((resolve, reject) =>\n            {\n              that.client.indices.close({\n                  index: that.collectionName\n                })\n                .then(() =>\n                {\n                  that.client.indices.putSettings({\n                      index: that.collectionName,\n                      body: {\n                        \"settings\": {\n                          \"analysis\": {\n                            \"analyzer\": {\n                              \"fulltext_analyzer\": {\n                                \"tokenizer\": \"standard\",\n                                \"filter\": [\"standard\", \"lowercase\", \"asciifolding\", \"porter_stem\"]\n                              },\n                              \"case_insensitive\": {\n                                \"tokenizer\": \"keyword\",\n                                \"filter\": [\"lowercase\", \"asciifolding\"]\n                              }\n                            }\n                          }\n                        }\n                      }\n                    })\n                    .then(() =>\n                    {\n                      that.client.indices.open({\n                          index: that.collectionName\n                        })\n                        .then(resolve, reject);\n                    }, reject);\n                }, reject);\n            });\n          }\n          analyse()\n            .then(() => sort()\n              .then(upload, reject), reject);\n        }, reject);\n    });\n  }\n\n  /**\n   * @override\n   */\n  createRecord(record)\n  {\n    return this.updateRecord(record);\n  }\n\n  /**\n   * @override\n   * TODO: I think there is a bug with exisint record\n   */\n  async updateRecord(record)\n  {\n    record = Object.assign({}, record);\n    const id = record[this.primaryKey];\n    delete record[this.primaryKey];\n    for (let x in record)\n    {\n      if (x.match(/(^_|password|roles|meta)/g))\n      {\n        delete record[x];\n      }\n    }\n    try\n    {\n      return await this.client.create({\n        index: this.collectionName,\n        type: this.collectionName,\n        id: id,\n        body: record,\n        refresh: true\n      });\n    }\n    catch (e)\n    {\n      return await this.client.update({\n        index: this.collectionName,\n        type: this.collectionName,\n        id: id,\n        body: {\n          doc: record\n        },\n        refresh: true\n      });\n    }\n  }\n\n  /**\n   * @override\n   */\n  deleteRecord(record)\n  {\n    return this.client.delete({\n      index: this.collectionName,\n      type: this.collectionName,\n      id: record[this.primaryKey],\n      refresh: true\n    });\n  }\n\n  /**\n   * @override\n   */\n  searchRecords(inquery)\n  {\n    const searchMeta = this.searchMeta;\n    return new Promise((resolve, reject) =>\n    {\n      let query = [\n\n      ];\n\n      if (inquery.filter.length === 0)\n      {\n        query.push({\n          match_all: {}\n        });\n      }\n      else\n      {\n        inquery.filter.forEach(infilter =>\n        {\n          if (infilter.filter === 'equals')\n          {\n            let term = {};\n            term[infilter.field] = infilter.value[0];\n            query.push({\n              term\n            })\n          }\n          else if (infilter.filter === 'within')\n          {\n            let terms = {};\n            terms[infilter.field] = infilter.value;\n            query.push({\n              terms\n            })\n          }\n          else if (infilter.filter === 'regex')\n          {\n            let regexp = {};\n            regexp[infilter.field] = infilter.value[0];\n            if (regexp[infilter.field].match(/^\\^/))\n            {\n              regexp[infilter.field] = regexp[infilter.field].substr(1)\n            }\n            if (regexp[infilter.field].match(/\\$$/))\n            {\n              regexp[infilter.field] = regexp[infilter.field].substr(0, regexp[infilter.field].length - 1)\n            }\n            query.push({\n              regexp\n            })\n          }\n          else if (infilter.filter === 'search')\n          {\n            let query_string = {};\n            query_string.query = infilter.value[0];\n            if (searchMeta.searchWeights)\n            {\n              query_string.fields = Object.keys(searchMeta.searchWeights)\n                .map(key => `${key}^${searchMeta.searchWeights[key]}`);\n            }\n            query_string.analyzer = \"fulltext_analyzer\";\n            query.push({\n              query_string\n            })\n          }\n          else\n          {\n            console.error('Unhandelled Filter', infilter);\n          }\n        });\n      }\n\n      if (query.length === 1)\n      {\n        query = query[0];\n      }\n      else\n      {\n        query = {\n          bool: {\n            must: query\n          }\n        };\n      }\n\n      let body = {\n        query\n      };\n\n      body.sort = {};\n      if (!inquery.sort || inquery.sort === \"search\")\n      {\n        inquery.sort = '_score';\n      }\n      else\n      {\n        inquery.sort += '.case_insensitive'\n      }\n      body.sort[inquery.sort] = inquery.order === 'dsc' ? 'desc' : 'asc';\n      this.client.search({\n          index: this.collectionName,\n          body,\n          size: 10000,\n          _source: false\n        })\n        .then(results =>\n        {\n          results = results.hits.hits.map(h => h._id);\n          resolve(results);\n        }, reject);\n    });\n  }\n\n}\n\nmodule.exports = ElasticSearch;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 76,
+    "kind": "variable",
+    "name": "Search",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~Search",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 77,
+    "kind": "variable",
+    "name": "elasticsearch",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~elasticsearch",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 78,
+    "kind": "class",
+    "name": "ElasticSearch",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/ElasticSearch.js",
+    "importStyle": "ElasticSearch",
+    "description": "Search using ElasticSearch.\nNeeds to be revised at 10000 records.\nNeeds ```elasticsearch``` package.",
+    "lineNumber": 21,
+    "interface": false,
+    "extends": [
+      "Search"
+    ]
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#connect",
+    "access": "public",
+    "description": "",
+    "lineNumber": 26,
+    "override": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 80,
+    "kind": "member",
+    "name": "client",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#client",
+    "access": "public",
+    "description": "reference to driver object",
+    "lineNumber": 31,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "initialise",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#initialise",
+    "access": "public",
+    "description": "",
+    "lineNumber": 53,
+    "override": true,
+    "params": [
+      {
+        "name": "searchMeta",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "records",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 82,
+    "kind": "member",
+    "name": "searchMeta",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#searchMeta",
+    "access": "public",
+    "description": "store for later use",
+    "lineNumber": 56,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#createRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 166,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#updateRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 175,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#deleteRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 214,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "method",
+    "name": "searchRecords",
+    "memberof": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch#searchRecords",
+    "access": "public",
+    "description": "",
+    "lineNumber": 227,
+    "override": true,
+    "params": [
+      {
+        "name": "inquery",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 87,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "content": "/**\n * @file\n * \n * @author Nahid Akbar\n * @year 2016\n * @copyright Data61 -\n *            Commonwealth Scientific and Industrial Research Organisation (CSIRO) -\n *            Australian Government. All rights reserved.\n */\n\n\"use strict\";\n\nconst Search = require('./Search');\nconst MongoStorage = require('../storage/MongoStorage');\n\n/**\n * Search using mongodb query engine.\n * Requres ```mongodb``` package.\n */\nclass MongoSearch extends Search\n{\n  /**\n   * @override\n   */\n  initialise(searchMeta, records)\n  {\n    const searchWeights = searchMeta.searchWeights || {};\n    let collection = this.collection;\n    return new Promise((resolve, reject) =>\n    {\n      function search()\n      {\n        let straight = {};\n        let text = {};\n        let textWeights = {};\n        for (let field in searchMeta.fields)\n        {\n          if (searchMeta.fields[field].dummy)\n          {\n            continue;\n          }\n          if (searchMeta.fields[field].searchField)\n          {\n            straight[searchMeta.fields[field].searchField] = 1;\n          }\n          else\n          {\n            straight[field] = 1;\n          }\n          if (searchMeta.fields[field].filters.indexOf('search') !== -1)\n          {\n            text[field] = 'text';\n            textWeights[field] = 1;\n          }\n        }\n        for (let field in searchWeights)\n        {\n          text[field] = 'text';\n          textWeights[field] = searchWeights[field];\n        }\n        let promises = [];\n        for (let field in straight)\n        {\n          let f = {};\n          f[field] = straight[field];\n\n          promises.push(collection.createIndex(f, {\n            background: true,\n            name: field + '_straight'\n          }));\n        }\n        console.log(\"INDEX\", \"TEXT\", text, textWeights, \"NORMAL\", straight);\n        if (Object.keys(text)\n          .length > 0)\n        {\n          promises.push(collection.createIndex(text, {\n            background: true,\n            name: 'text',\n            weights: textWeights\n          }));\n        }\n        Promise.all(promises)\n          .then(resolve, reject);\n      }\n      //resolve();\n      collection.dropIndexes(() =>\n      {\n        collection.removeMany({}, () =>\n        {\n          if (records.length > 0)\n          {\n            collection.insertMany(records, {}, search);\n          }\n          else\n          {\n            search();\n          }\n        });\n      });\n    });\n  }\n\n  /**\n   * @override\n   */\n  searchRecords(inquery, limit = 0)\n  {\n    const collection = this.collection;\n    const primaryKey = this.primaryKey;\n    return new Promise((resolve, reject) =>\n    {\n      let query = [],\n        f, hasTextSearch = false;\n\n      inquery.filter.forEach(infilter =>\n      {\n        switch (infilter.filter)\n        {\n        case 'equals':\n          f = {};\n          f[infilter.field] = infilter.value[0];\n          query.push(f);\n          break;\n        case 'within':\n          f = {};\n          f[infilter.field] = {\n            $in: infilter.value\n          };\n          query.push(f);\n          break;\n        case 'regex':\n          f = {};\n          f[infilter.field] = {\n            $regex: infilter.value[0]\n          };\n          query.push(f);\n          break;\n        case 'search':\n          hasTextSearch = true;\n          f = {\n            $text: {\n              $search: infilter.value[0],\n              $caseSensitive: false\n            }\n          };\n          query.push(f);\n          break;\n        default:\n          console.error('Unhandelled Filter', infilter);\n        }\n      });\n\n      if (query.length === 0)\n      {\n        query = {};\n      }\n      else if (query.length === 1)\n      {\n        query = query[0];\n      }\n      else\n      {\n        query = {\n          $and: query\n        };\n      }\n\n      let project = {\n        _id: 0\n      };\n      if (typeof primaryKey === 'string')\n      {\n        project[primaryKey] = 1;\n      }\n      else if (typeof primaryKey === 'object')\n      {\n        for (let key in primaryKey)\n        {\n          project[key] = 1;\n        }\n      }\n\n      let sort = {};\n      if (inquery.sort)\n      {\n        console.log(inquery.sort, hasTextSearch);\n        if (inquery.sort === 'search' && hasTextSearch)\n        {\n          project.score = {\n            $meta: \"textScore\"\n          };\n          sort.score = {\n            $meta: \"textScore\"\n          };\n        }\n        else\n        {\n          sort[inquery.sort] = inquery.order === 'dsc' ? -1 : 1;\n        }\n      }\n\n      console.log('MONGO QUERY', query, 'PROJECT', project, 'SORT', sort);\n\n      let search = collection.find(query)\n        .project(project)\n        .sort(sort);\n\n      if (limit)\n      {\n        search = search.limit(limit);\n      }\n\n      search.map(x => (typeof primaryKey === 'string') ? x[primaryKey] : x)\n        .toArray()\n        .then(resolve, reject);\n    });\n  }\n\n  // rest is the same as mongo storage\n\n}\n\nmodule.exports = MongoSearch;\n\nMongoSearch.prototype.connect = MongoStorage.prototype.connect;\nMongoSearch.prototype.createRecord = MongoStorage.prototype.createRecord;\nMongoSearch.prototype.readRecord = MongoStorage.prototype.readRecord;\nMongoSearch.prototype.updateRecord = MongoStorage.prototype.updateRecord;\nMongoSearch.prototype.deleteRecord = MongoStorage.prototype.deleteRecord;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 88,
+    "kind": "variable",
+    "name": "Search",
+    "memberof": "node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/MongoSearch.js~Search",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 13,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 89,
+    "kind": "variable",
+    "name": "MongoStorage",
+    "memberof": "node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/MongoSearch.js~MongoStorage",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 90,
+    "kind": "class",
+    "name": "MongoSearch",
+    "memberof": "node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/MongoSearch.js",
+    "importStyle": "MongoSearch",
+    "description": "Search using mongodb query engine.\nRequres ```mongodb``` package.",
+    "lineNumber": 20,
+    "interface": false,
+    "extends": [
+      "Search"
+    ]
+  },
+  {
+    "__docId__": 91,
+    "kind": "method",
+    "name": "initialise",
+    "memberof": "node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch#initialise",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "override": true,
+    "params": [
+      {
+        "name": "searchMeta",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "records",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "searchRecords",
+    "memberof": "node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch#searchRecords",
+    "access": "public",
+    "description": "",
+    "lineNumber": 106,
+    "override": true,
+    "params": [
+      {
+        "name": "inquery",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "limit",
+        "optional": true,
+        "types": [
+          "number"
+        ],
+        "defaultRaw": 0,
+        "defaultValue": "0"
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 93,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/search/NoSearch.js",
+    "content": "\"use strict\";\n\nconst Search = require('./Search');\n\n/**\n * Provides no search capability.\n * A list of all ids are always returned\n */\nclass NoSearch extends Search\n{\n  /**\n   * @override\n   */\n  async initialise(searchMeta, records)\n  {\n    /**\n     * stored ids\n     */\n    this.ids = records.map(record => record[this.primaryKey]);\n  }\n\n  /**\n   * @override\n   */\n  async createRecord(record)\n  {\n    this.ids.push(record[this.primaryKey]);\n  }\n\n  /**\n   * @override\n   */\n  async updateRecord(record)\n  {}\n\n  /**\n   * @override\n   */\n  async deleteRecord(record)\n  {\n    this.ids = this.ids.filter(id => id !== record[this.primaryKey]);\n  }\n\n  /**\n   * @override\n   */\n  async searchRecords(query)\n  {\n    return this.ids.slice();\n  }\n}\n\nmodule.exports = NoSearch;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/search/NoSearch.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 94,
+    "kind": "variable",
+    "name": "Search",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~Search",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/NoSearch.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 95,
+    "kind": "class",
+    "name": "NoSearch",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/NoSearch.js",
+    "importStyle": "NoSearch",
+    "description": "Provides no search capability.\nA list of all ids are always returned",
+    "lineNumber": 9,
+    "interface": false,
+    "extends": [
+      "Search"
+    ]
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "initialise",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch#initialise",
+    "access": "public",
+    "description": "",
+    "lineNumber": 14,
+    "override": true,
+    "params": [
+      {
+        "name": "searchMeta",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "records",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 97,
+    "kind": "member",
+    "name": "ids",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch#ids",
+    "access": "public",
+    "description": "stored ids",
+    "lineNumber": 19,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch#createRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 25,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 99,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch#updateRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 33,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 100,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch#deleteRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 39,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 102,
+    "kind": "method",
+    "name": "searchRecords",
+    "memberof": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch#searchRecords",
+    "access": "public",
+    "description": "",
+    "lineNumber": 47,
+    "override": true,
+    "params": [
+      {
+        "name": "query",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 103,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/search/Search.js",
+    "content": "\"use strict\";\n\n/**\n * @abstract\n * @public\n */\nclass Search\n{\n\n  /**\n   * @param {StorageOptions} options see fields\n   */\n  constructor(options)\n  {\n    /**\n     * Id field of records\n     */\n    this.primaryKey = options.primaryKey || 'id';\n    /**\n     * Connection string for search\n     */\n    this.connectionString = options.connectionString || '';\n    /**\n     * Name of collection. Derived from connection string if there is # based seperation.\n     */\n    this.collectionName = this.connectionString.substr(this.connectionString.indexOf('#') + 1);\n    this.connectionString = this.connectionString.substr(0, this.connectionString.indexOf('#')) || this.connectionString;\n  }\n\n  /**\n   * connect to search system\n   */\n  async connect()\n  {\n\n  }\n\n  /**\n   * Initialised search system with initial set of records\n   * @abstract\n   */\n  async initialise(searchMeta, records)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async createRecord(record)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async updateRecord(record)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async deleteRecord(record)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async searchRecords(query)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n}\n\nmodule.exports = Search;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/search/Search.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 104,
+    "kind": "class",
+    "name": "Search",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/search/Search.js",
+    "importStyle": "Search",
+    "description": "",
+    "lineNumber": 7,
+    "abstract": true,
+    "interface": false
+  },
+  {
+    "__docId__": 105,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 13,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "StorageOptions"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "see fields"
+      }
+    ]
+  },
+  {
+    "__docId__": 106,
+    "kind": "member",
+    "name": "primaryKey",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#primaryKey",
+    "access": "public",
+    "description": "Id field of records",
+    "lineNumber": 18,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 107,
+    "kind": "member",
+    "name": "connectionString",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#connectionString",
+    "access": "public",
+    "description": "Connection string for search",
+    "lineNumber": 22,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 108,
+    "kind": "member",
+    "name": "collectionName",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#collectionName",
+    "access": "public",
+    "description": "Name of collection. Derived from connection string if there is # based seperation.",
+    "lineNumber": 26,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 110,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#connect",
+    "access": "public",
+    "description": "connect to search system",
+    "lineNumber": 33,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 111,
+    "kind": "method",
+    "name": "initialise",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#initialise",
+    "access": "public",
+    "description": "Initialised search system with initial set of records",
+    "lineNumber": 42,
+    "abstract": true,
+    "params": [
+      {
+        "name": "searchMeta",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "records",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#createRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 50,
+    "abstract": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 113,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#updateRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 58,
+    "abstract": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 114,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#deleteRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 66,
+    "abstract": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 115,
+    "kind": "method",
+    "name": "searchRecords",
+    "memberof": "node-collections-boilerplate-nahid/search/Search.js~Search",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/search/Search.js~Search#searchRecords",
+    "access": "public",
+    "description": "",
+    "lineNumber": 74,
+    "abstract": true,
+    "params": [
+      {
+        "name": "query",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 116,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "content": "\"use strict\";\n\nconst AWS = require('aws-sdk');\nconst Storage = require('./Storage');\n\nconst dynamoDecodeRecord = require('./dynamoDecodeRecord');\nconst dynamoEncodeRecord = require('./dynamoEncodeRecord');\nconst StreamsNotifier = require('./DynamoStorageStreamNotifier');\n\n/**\n * Use a AWS DynamoDB table as storage.\n *\n * Pretty pointless storage system but have some legacy data in it.\n *\n * Needs ```aws-sdk``` package.\n */\nclass DynamoStorage extends Storage\n{\n  /**\n   * @param {StorageOptions} options see fields\n   */\n  constructor(options = {})\n  {\n    super(options)\n    /** AWS region */\n    this.region = options.region || undefined;\n    /** reference to driver object */\n    this.db = new AWS.DynamoDB({\n      apiVersion: '2012-08-10',\n      maxRetries: 99 * 1024,\n      endpoint: this.connectionString ? new AWS.Endpoint(this.connectionString) : undefined,\n      region: this.region\n    });\n\n    /**\n     * Set it to true to use streams for receiving data updates.\n     * @type {boolean}\n     */\n    this.useStreams = options.useStreams || false;\n    if (this.useStreams)\n    {\n      /** @private */\n      this.notifier = new StreamsNotifier(this);\n      /** @private */\n      this.updateCheckImpl = this.notifier.updateCheck.bind(this.notifier);\n    }\n  }\n\n  async connect()\n  {\n    if (this.notifier)\n    {\n      await this.notifier.connect();\n    }\n    await super.connect();\n  }\n\n  /** @override */\n  readAllRecords()\n  {\n    const that = this;\n    return new Promise((resolve, reject) =>\n    {\n      let items = [];\n\n      function scan(LastEvaluatedKey = undefined)\n      {\n        const request = {\n          TableName: that.collectionName,\n        }\n        if (LastEvaluatedKey)\n        {\n          request.ExclusiveStartKey = LastEvaluatedKey;\n        }\n\n        that.db.scan(request, (err, data) =>\n        {\n          if (err)\n          {\n            reject(err);\n          }\n          else\n          {\n            items = items.concat(data.Items)\n            if (data.LastEvaluatedKey)\n            {\n              scan(data.LastEvaluatedKey);\n            }\n            else\n            {\n              items = items.map(record =>\n              {\n                return dynamoDecodeRecord(record, that.primaryKey);\n              });\n              resolve(items);\n            }\n          }\n        });\n      }\n      scan();\n    });\n  }\n\n  /** @override */\n  createRecord(record)\n  {\n    return this.updateRecord(record);\n  }\n\n  /** @override */\n  async readRecord(record)\n  {\n    const query = {\n      TableName: this.collectionName,\n      Key: {}\n    };\n    query.Key[this.primaryKey] = {\n      \"S\": record[this.primaryKey]\n    };\n    let data = await this.db.getItem(query)\n      .promise();\n\n    data = data.Item;\n    // if (!data)\n    // {\n    //   throw new Error('not found');\n    // }\n    return dynamoDecodeRecord(data, this.primaryKey);\n  }\n\n  /** @override */\n  async updateRecord(record)\n  {\n    await this.db.putItem({\n        TableName: this.collectionName,\n        Item: dynamoEncodeRecord(record, this.primaryKey)\n      })\n      .promise();\n    return record;\n  }\n\n  /** @override */\n  async deleteRecord(record)\n  {\n    const query = {\n      TableName: this.collectionName,\n      Key: {}\n    };\n    query.Key[this.primaryKey] = {\n      \"S\": record[this.primaryKey]\n    };\n    return await this.db.deleteItem(query)\n      .promise();\n  }\n}\n\nmodule.exports = DynamoStorage;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 117,
+    "kind": "variable",
+    "name": "AWS",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~AWS",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 118,
+    "kind": "variable",
+    "name": "Storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~Storage",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 119,
+    "kind": "variable",
+    "name": "dynamoDecodeRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~dynamoDecodeRecord",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "variable",
+    "name": "dynamoEncodeRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~dynamoEncodeRecord",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 121,
+    "kind": "variable",
+    "name": "StreamsNotifier",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~StreamsNotifier",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 8,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 122,
+    "kind": "class",
+    "name": "DynamoStorage",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorage.js",
+    "importStyle": "DynamoStorage",
+    "description": "Use a AWS DynamoDB table as storage.\n\nPretty pointless storage system but have some legacy data in it.\n\nNeeds ```aws-sdk``` package.",
+    "lineNumber": 17,
+    "interface": false,
+    "extends": [
+      "Storage"
+    ]
+  },
+  {
+    "__docId__": 123,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 22,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "StorageOptions"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "see fields"
+      }
+    ]
+  },
+  {
+    "__docId__": 124,
+    "kind": "member",
+    "name": "region",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#region",
+    "access": "public",
+    "description": "AWS region",
+    "lineNumber": 26,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 125,
+    "kind": "member",
+    "name": "db",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#db",
+    "access": "public",
+    "description": "reference to driver object",
+    "lineNumber": 28,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "member",
+    "name": "useStreams",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#useStreams",
+    "access": "public",
+    "description": "Set it to true to use streams for receiving data updates.",
+    "lineNumber": 39,
+    "type": {
+      "nullable": null,
+      "types": [
+        "boolean"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 127,
+    "kind": "member",
+    "name": "notifier",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#notifier",
+    "access": "private",
+    "description": null,
+    "lineNumber": 43,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 128,
+    "kind": "member",
+    "name": "updateCheckImpl",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#updateCheckImpl",
+    "access": "private",
+    "description": null,
+    "lineNumber": 45,
+    "ignore": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#connect",
+    "access": "public",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 130,
+    "kind": "method",
+    "name": "readAllRecords",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#readAllRecords",
+    "access": "public",
+    "description": null,
+    "lineNumber": 59,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 131,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#createRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 105,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 132,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#readRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 111,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#updateRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 132,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage#deleteRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 143,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 135,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "content": "const AWS = require('aws-sdk');\n\nconst dynamoDecodeRecord = require('./dynamoDecodeRecord');\n\n/**\n * Implmentation of streams notification handler.\n *\n * Do not use directly. see useStreams option in DynamodbStorage.\n */\nclass DynamoStorageStreamNotifier\n{\n  constructor(storage)\n  {\n    this.storage = storage;\n    this.stream = new AWS.DynamoDBStreams({\n      apiVersion: '2012-08-10',\n      region: storage.region\n    });\n  }\n\n  async connect()\n  {\n    // extract StreamArn with ListStreams\n    const streams = (await this.stream.listStreams({\n          TableName: this.storage.collectionName\n        })\n        .promise())\n      .Streams || [];\n    if (streams.length === 0)\n    {\n      throw new Error(`Stream is not found for table '${this.storage.collectionName}'.`);\n    }\n    this.streamArn = streams[0].StreamArn;\n\n    // find the latest shard id\n    let lastEvaluatedShardId = undefined;\n    let stream;\n    do {\n      stream = (await this.stream.describeStream({\n            StreamArn: this.streamArn,\n            ExclusiveStartShardId: lastEvaluatedShardId\n          })\n          .promise())\n        .StreamDescription;\n      lastEvaluatedShardId = stream.LastEvaluatedShardId;\n    } while (stream.LastEvaluatedShardId);\n    let shards = stream.Shards;\n    let shard = shards[shards.length - 1];\n    this.shardId = shard.ShardId;\n\n    // find the latest shard iterator\n    let iterator = await this.stream.getShardIterator({\n        StreamArn: this.streamArn,\n        ShardId: this.shardId,\n        ShardIteratorType: 'LATEST'\n        //ShardIteratorType: 'TRIM_HORIZON'\n      })\n      .promise();\n    this.shardIterator = iterator.ShardIterator;\n  }\n\n  async updateCheck()\n  {\n    if (!this.shardIterator)\n    {\n      // get next shard iterator\n      const shards = (await this.stream.describeStream({\n            StreamArn: this.streamArn,\n            ExclusiveStartShardId: this.shardId\n          })\n          .promise())\n        .StreamDescription.Shards;\n      if (shards.length > 0)\n      {\n        this.shardId = shards[0].ShardId;\n        this.shardIterator = (await this.stream.getShardIterator({\n              StreamArn: this.streamArn,\n              ShardId: this.shardId,\n              ShardIteratorType: 'TRIM_HORIZON'\n            })\n            .promise())\n          .ShardIterator;\n      }\n      else\n      {\n        return;\n      }\n    }\n    const records = await this.stream.getRecords({\n        ShardIterator: this.shardIterator\n      })\n      .promise();\n    for (let record of records.Records)\n    {\n      switch (record.eventName)\n      {\n      case 'INSERT':\n        this.storage.emit('create', dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));\n        break;\n      case 'MODIFY':\n        this.storage.emit('update', dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));\n        break;\n      case 'REMOVE':\n        this.storage.emit('delete', dynamoDecodeRecord(record.dynamodb.Keys, this.storage.primaryKey));\n        break;\n      default:\n        console.log('[ERROR] TODO: process', record);\n      }\n    }\n    this.shardIterator = records.NextShardIterator;\n    if (records.Records.length > 0)\n    {\n      await this.updateCheck();\n    }\n  }\n}\n\nmodule.exports = DynamoStorageStreamNotifier;\n\n/*\n(async function()\n{\n  const notifier = new Notifier({\n    region: 'ap-southeast-2',\n    collectionName: 'test2',\n    primaryKey: 'id',\n    emit: console.log.bind(console)\n  });\n  await notifier.initialise();\n\n  async function checkForUpdate()\n  {\n    await notifier.checkForUpdate();\n    setTimeout(checkForUpdate, 1000)\n  }\n\n  checkForUpdate()\n\n})();\n*/\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 136,
+    "kind": "variable",
+    "name": "AWS",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~AWS",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 1,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "variable",
+    "name": "dynamoDecodeRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~dynamoDecodeRecord",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 138,
+    "kind": "class",
+    "name": "DynamoStorageStreamNotifier",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js",
+    "importStyle": "DynamoStorageStreamNotifier",
+    "description": "Implmentation of streams notification handler.\n\nDo not use directly. see useStreams option in DynamodbStorage.",
+    "lineNumber": 10,
+    "interface": false
+  },
+  {
+    "__docId__": 139,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 12,
+    "undocument": true
+  },
+  {
+    "__docId__": 140,
+    "kind": "member",
+    "name": "storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#storage",
+    "access": "public",
+    "description": null,
+    "lineNumber": 14,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "member",
+    "name": "stream",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#stream",
+    "access": "public",
+    "description": null,
+    "lineNumber": 15,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 142,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#connect",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 143,
+    "kind": "member",
+    "name": "streamArn",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#streamArn",
+    "access": "public",
+    "description": null,
+    "lineNumber": 33,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 144,
+    "kind": "member",
+    "name": "shardId",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#shardId",
+    "access": "public",
+    "description": null,
+    "lineNumber": 49,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 145,
+    "kind": "member",
+    "name": "shardIterator",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#shardIterator",
+    "access": "public",
+    "description": null,
+    "lineNumber": 59,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 146,
+    "kind": "method",
+    "name": "updateCheck",
+    "memberof": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier#updateCheck",
+    "access": "public",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 150,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "content": "\"use strict\";\n\nconst fs = require('fs');\nconst path = require('path');\n\nconst Storage = require('./Storage');\n\n/**\n * Collection served from file system storage.\n * \n * Very useful for rapid prototyping.\n */\nclass FSStorage extends Storage\n{\n  /**\n   * @param {StorageOptions} options see fields\n   */\n  constructor(options)\n  {\n    super(options)\n    /**\n     * folder path where data is kept\n     */\n    this.dirname = options.connectionString;\n    try\n    {\n      if (!fs.existsSync(this.dirname))\n      {\n        fs.mkdirSync(this.dirname);\n      }\n    }\n    catch (e)\n    {\n\n    }\n    /**\n     * Mapping between id and last modified data.\n     */\n    this.list = this.listItems();\n  }\n\n  /**\n   * Return a mapping between record id and last modified data at directory.\n   * Used for update checking.\n   */\n  listItems()\n  {\n    let output = {};\n    for (let file of fs.readdirSync(this.dirname))\n    {\n      if (file.match(/\\.json$/))\n      {\n        let stat = fs.statSync(path.join(this.dirname, file));\n        if (stat.isFile())\n        {\n          output[file.substr(0, file.length - 5)] = stat.mtime;\n        }\n      }\n    }\n    return output;\n  }\n\n  /** @override  */\n  readAllRecords()\n  {\n    let output = [];\n    for (let key in this.list)\n    {\n      let query = {};\n      query[this.primaryKey] = key;\n      output.push(this.readRecord(query));\n    }\n    return Promise.all(output);\n  }\n\n  /** @override  */\n  createRecord(record)\n  {\n    return this.updateRecord(record);\n  }\n\n  /** @override  */\n  readRecord(record)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      let key = record[this.primaryKey];\n      try\n      {\n        resolve(JSON.parse(fs.readFileSync(path.join(this.dirname, key + '.json'))));\n      }\n      catch (e)\n      {\n        reject(e);\n      }\n    });\n  }\n\n  /** @override  */\n  updateRecord(record)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      let key = record[this.primaryKey];\n      let file = path.join(this.dirname, key + '.json');\n      fs.writeFileSync(file, JSON.stringify(record, null, 1));\n      let stat = fs.statSync(file);\n      this.list[key] = stat.mtime;\n      resolve(JSON.parse(fs.readFileSync(file)));\n    });\n  }\n\n  /** @override  */\n  deleteRecord(record)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      let key = record[this.primaryKey];\n      let file = path.join(this.dirname, key + '.json');\n      fs.unlinkSync(file);\n      delete this.list[key];\n      resolve(record);\n    });\n  }\n\n  /** @override  */\n  async updateCheckImpl()\n  {\n    let updated = false;\n    let newlist = this.listItems(),\n      list = this.list,\n      type, record = {};\n\n    // check for deleted item\n    type = 'delete';\n    for (let item in list)\n    {\n      if (!newlist[item])\n      {\n        record[this.primaryKey] = item;\n        this.emit(type, record);\n        delete list[item];\n        updated = true;\n      }\n    }\n    // check for new items\n    type = 'create';\n    for (let item in newlist)\n    {\n      if (!list[item])\n      {\n        record = JSON.parse(fs.readFileSync(path.join(this.dirname, item + '.json')));\n        this.emit(type, record);\n        list[item] = newlist[item];\n        updated = true;\n      }\n    }\n\n    // check for modified items\n    type = 'update';\n    for (let item in list)\n    {\n      if (list[item].getTime() !== newlist[item].getTime())\n      {\n        record = JSON.parse(fs.readFileSync(path.join(this.dirname, item + '.json')));\n        this.emit(type, record);\n        list[item] = newlist[item];\n        updated = true;\n      }\n    }\n    return updated;\n  }\n\n}\n\nmodule.exports = FSStorage;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 151,
+    "kind": "variable",
+    "name": "fs",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~fs",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 152,
+    "kind": "variable",
+    "name": "path",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~path",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 153,
+    "kind": "variable",
+    "name": "Storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~Storage",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 154,
+    "kind": "class",
+    "name": "FSStorage",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/FSStorage.js",
+    "importStyle": "FSStorage",
+    "description": "Collection served from file system storage.\n\nVery useful for rapid prototyping.",
+    "lineNumber": 13,
+    "interface": false,
+    "extends": [
+      "Storage"
+    ]
+  },
+  {
+    "__docId__": 155,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "StorageOptions"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "see fields"
+      }
+    ]
+  },
+  {
+    "__docId__": 156,
+    "kind": "member",
+    "name": "dirname",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#dirname",
+    "access": "public",
+    "description": "folder path where data is kept",
+    "lineNumber": 24,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 157,
+    "kind": "member",
+    "name": "list",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#list",
+    "access": "public",
+    "description": "Mapping between id and last modified data.",
+    "lineNumber": 39,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 158,
+    "kind": "method",
+    "name": "listItems",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#listItems",
+    "access": "public",
+    "description": "Return a mapping between record id and last modified data at directory.\nUsed for update checking.",
+    "lineNumber": 46,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 159,
+    "kind": "method",
+    "name": "readAllRecords",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#readAllRecords",
+    "access": "public",
+    "description": null,
+    "lineNumber": 64,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 160,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#createRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 77,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 161,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#readRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 83,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 162,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#updateRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 100,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 163,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#deleteRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 114,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 164,
+    "kind": "method",
+    "name": "updateCheckImpl",
+    "memberof": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage#updateCheckImpl",
+    "access": "public",
+    "description": null,
+    "lineNumber": 127,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 165,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/MemoryStorage.js",
+    "content": "\"use strict\";\n\nconst Storage = require('./Storage');\n\n/**\n * Use an array object as storage.\n * \n */\nclass MemoryStorage extends Storage\n{\n  constructor(options)\n  {\n    super(options)\n\n    /**\n     * shared array\n     */\n    this.array = options.array || [];\n  }\n\n  /** @override */\n  async readAllRecords()\n  {\n    return JSON.parse(JSON.stringify(this.array));\n  }\n\n  /** @override */\n  createRecord(record)\n  {\n    return this.updateRecord(record);\n  }\n\n  /** @override */\n  async readRecord(record)\n  {\n    for (let item of this.array)\n    {\n      if (item[this.primaryKey] === record[this.primaryKey])\n      {\n        return JSON.parse(JSON.stringify(item));\n      }\n    }\n    throw new Error('not found');\n  }\n\n  /** @override */\n  async updateRecord(record)\n  {\n    for (let item of this.array)\n    {\n      if (item[this.primaryKey] === record[this.primaryKey])\n      {\n        for (let field in item)\n        {\n          if (record[field] === undefined)\n          {\n            delete item[field];\n          }\n        }\n        for (let field in record)\n        {\n          if (record[field] !== undefined)\n          {\n            item[field] = JSON.parse(JSON.stringify(record[field]));\n          }\n          else\n          {\n            delete item[field];\n          }\n        }\n        return JSON.parse(JSON.stringify(item));\n      }\n    }\n    this.array.push(record);\n    return record;\n  }\n\n  /** @override */\n  async deleteRecord(record)\n  {\n    for (let index = 0; index < this.array.length; index++)\n    {\n      let item = this.array[index]\n      if (item[this.primaryKey] === record[this.primaryKey])\n      {\n        this.array.splice(index, 1);\n\n        return record;\n      }\n    }\n    throw new Error('not found');\n  }\n\n}\n\nmodule.exports = MemoryStorage;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/MemoryStorage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 166,
+    "kind": "variable",
+    "name": "Storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~Storage",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/MemoryStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 167,
+    "kind": "class",
+    "name": "MemoryStorage",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/MemoryStorage.js",
+    "importStyle": "MemoryStorage",
+    "description": "Use an array object as storage.",
+    "lineNumber": 9,
+    "interface": false,
+    "extends": [
+      "Storage"
+    ]
+  },
+  {
+    "__docId__": 168,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 11,
+    "undocument": true
+  },
+  {
+    "__docId__": 169,
+    "kind": "member",
+    "name": "array",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage#array",
+    "access": "public",
+    "description": "shared array",
+    "lineNumber": 18,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 170,
+    "kind": "method",
+    "name": "readAllRecords",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage#readAllRecords",
+    "access": "public",
+    "description": null,
+    "lineNumber": 22,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 171,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage#createRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 28,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 172,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage#readRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 34,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 173,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage#updateRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 47,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 174,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage#deleteRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 79,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 175,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "content": "\"use strict\";\n\nconst mongodb = require('mongodb');\nconst Storage = require('./Storage');\n\nconst MONGO_BULK_RECORDS_GET_COUNT = 1024;\n\n/**\n * Mongodb collection as storage.\n * \n * Requires ```mongodb``` package.\n */\nclass MongoStorage extends Storage\n{\n  /** @override */\n  connect()\n  {\n    return new Promise((resolve, reject) =>\n    {\n      mongodb.MongoClient.connect(this.connectionString, (err, db) =>\n      {\n        if (err)\n        {\n          reject(err);\n        }\n        else\n        {\n          /**\n           * reference to driver database object\n           */\n          this.database = db;\n          /**\n           * reference to driver collection object\n           */\n          this.collection = db.collection(this.collectionName);\n          resolve();\n          let index = {};\n          index[this.primaryKey] = 1;\n          this.collection.createIndex(index);\n        }\n      });\n    });\n  }\n\n  /** @override */\n  async readAllRecords()\n  {\n    let collection = this.collection;\n    const count = await collection.count({}, {});\n    let records = [];\n    while (records.length < count)\n    {\n      const items = await\n      collection.find({})\n        .skip(records.length)\n        .limit(MONGO_BULK_RECORDS_GET_COUNT)\n        .toArray();\n      items.forEach(item => delete item._id);\n      records = records.concat(items);\n    }\n    return records;\n  }\n\n  /** @override */\n  async createRecord(record)\n  {\n    let collection = this.collection;\n    await collection.insertOne(record, {});\n    return await this.readRecord({\n      _id: record._id\n    });\n  }\n\n  /** @override */\n  async readRecord(record)\n  {\n    let collection = this.collection;\n    const found = await collection.findOne(record, {});\n    if (!found)\n    {\n      throw new Error('Not found.');\n    }\n    delete found._id;\n    return found;\n  }\n\n  /** @override */\n  updateRecord(record)\n  {\n    let collection = this.collection;\n    return new Promise((resolve, reject) =>\n    {\n      let query = {};\n      query[this.primaryKey] = record[this.primaryKey];\n      collection.updateOne(query, record, {}, (err, result) =>\n      {\n        if (err)\n        {\n          reject(err);\n        }\n        else\n        {\n          resolve(record);\n        }\n      });\n    });\n  }\n\n  /** @override */\n  deleteRecord(record)\n  {\n    let collection = this.collection;\n    return new Promise((resolve, reject) =>\n    {\n      let query = {};\n      query[this.primaryKey] = record[this.primaryKey];\n      collection.deleteOne(query, {}, (err, result) =>\n      {\n        if (err || result.deletedCount === 0)\n        {\n          reject(err);\n        }\n        else\n        {\n          resolve(record);\n        }\n      });\n    });\n  }\n\n}\n\nmodule.exports = MongoStorage;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 176,
+    "kind": "variable",
+    "name": "mongodb",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~mongodb",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "Storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~Storage",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "variable",
+    "name": "MONGO_BULK_RECORDS_GET_COUNT",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MONGO_BULK_RECORDS_GET_COUNT",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "class",
+    "name": "MongoStorage",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/MongoStorage.js",
+    "importStyle": "MongoStorage",
+    "description": "Mongodb collection as storage.\n\nRequires ```mongodb``` package.",
+    "lineNumber": 13,
+    "interface": false,
+    "extends": [
+      "Storage"
+    ]
+  },
+  {
+    "__docId__": 180,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#connect",
+    "access": "public",
+    "description": null,
+    "lineNumber": 16,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 181,
+    "kind": "member",
+    "name": "database",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#database",
+    "access": "public",
+    "description": "reference to driver database object",
+    "lineNumber": 31,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 182,
+    "kind": "member",
+    "name": "collection",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#collection",
+    "access": "public",
+    "description": "reference to driver collection object",
+    "lineNumber": 35,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 183,
+    "kind": "method",
+    "name": "readAllRecords",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#readAllRecords",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 184,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#createRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 65,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 185,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#readRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 75,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 186,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#updateRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 88,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 187,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage#deleteRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 110,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 188,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "content": "\"use strict\";\n\nconst AWS = require('aws-sdk');\nconst Storage = require('./Storage');\n\n/**\n * Use a AWS S3 bucket as storage.\n * \n * Requires ```aws-sdk``` package.\n */\nclass S3Storage extends Storage\n{\n  /**\n   * @param {StorageOptions} options see fields\n   */\n  constructor(options)\n  {\n    super(options)\n    /** AWS region */\n    this.region = options.region;\n    /** reference to driver object */\n    this.s3 = new AWS.S3({\n      apiVersion: '2006-03-01',\n      endpoint: this.connectionString,\n      region: this.region,\n      s3ForcePathStyle: true\n    });\n  }\n\n  /** @override */\n  connect()\n  {\n    return new Promise((resolve, reject) =>\n    {\n      this.listItems()\n        .then(list => resolve(this.list = list), reject);\n    });\n  }\n\n  /** s3 list gives us last modified date; use that to efficiently check for updates */\n  listItems()\n  {\n    const that = this;\n    return new Promise((resolve, reject) =>\n    {\n      let output = {};\n\n      function iterate(ContinuationToken)\n      {\n        that.s3.listObjectsV2({\n          Bucket: that.collectionName,\n          ContinuationToken\n        }, (err, data) =>\n        {\n          if (err)\n          {\n            return reject(err);\n          }\n\n          data.Contents.forEach(item =>\n          {\n            output[item.Key] = item.LastModified;\n          });\n\n          if (!data.IsTruncated)\n          {\n            resolve(output);\n          }\n          else\n          {\n            iterate(data.NextContinuationToken);\n          }\n        });\n      }\n      iterate();\n    });\n  }\n\n  /** @override */\n  readAllRecords()\n  {\n    return new Promise((resolve, reject) =>\n    {\n      Promise.all(Object.keys(this.list)\n          .map(item =>\n          {\n            let query = {};\n            query[this.primaryKey] = item;\n            return this.readRecord(query);\n          }))\n        .then(resolve, reject);\n    });\n  }\n\n  /** @override */\n  createRecord(record)\n  {\n    return this.updateRecord(record);\n  }\n\n  /** @override */\n  readRecord(record)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      this.s3.getObject({\n        Bucket: this.collectionName,\n        Key: record[this.primaryKey]\n      }, (err, data) =>\n      {\n        if (err)\n        {\n          reject(err);\n        }\n        else\n        {\n          this.list[record[this.primaryKey]] = data.LastModified;\n          resolve(JSON.parse(data.Body));\n        }\n      });\n    });\n  }\n\n  /** @override */\n  updateRecord(record)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      this.s3.upload({\n        Bucket: this.collectionName,\n        Key: record[this.primaryKey],\n        Body: JSON.stringify(record)\n      }, (err, data) =>\n      {\n        if (err)\n        {\n          reject(err);\n        }\n        else\n        {\n          resolve(this.readRecord(record));\n        }\n      });\n    });\n  }\n\n  /** @override */\n  deleteRecord(record)\n  {\n    return new Promise((resolve, reject) =>\n    {\n      this.s3.deleteObject({\n        Bucket: this.collectionName,\n        Key: record[this.primaryKey]\n      }, (err, data) =>\n      {\n        if (err)\n        {\n          reject(err);\n        }\n        else\n        {\n          resolve(record);\n        }\n      });\n    });\n  }\n\n  /** @override */\n  async updateCheckImpl()\n  {\n    let updated = false;\n    let newlist = await this.listItems();\n    let list = this.list,\n      record = {};\n\n    // check for deleted item\n    for (let item in list)\n    {\n      if (!newlist[item])\n      {\n        record[this.primaryKey] = item;\n        this.emit('delete', record);\n        delete list[item];\n        updated = true;\n      }\n    }\n\n    // check for new items\n    for (let item in newlist)\n    {\n      if (!list[item])\n      {\n        record[this.primaryKey] = item;\n        this.readRecord(Object.assign({}, record))\n          .then(record =>\n          {\n            this.emit('create', record);\n            updated = true;\n          }, x => x);\n        list[item] = newlist[item];\n      }\n    }\n\n    // check for modified items\n    for (let item in list)\n    {\n      if (list[item].getTime() !== newlist[item].getTime())\n      {\n        record[this.primaryKey] = item;\n        this.readRecord(Object.assign({}, record))\n          .then(record =>\n          {\n            this.emit('update', record);\n            updated = true;\n          }, x => x);\n        list[item] = newlist[item];\n      }\n    }\n    return updated;\n  }\n}\n\nmodule.exports = S3Storage;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 189,
+    "kind": "variable",
+    "name": "AWS",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~AWS",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 190,
+    "kind": "variable",
+    "name": "Storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~Storage",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 4,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "class",
+    "name": "S3Storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/S3Storage.js",
+    "importStyle": "S3Storage",
+    "description": "Use a AWS S3 bucket as storage.\n\nRequires ```aws-sdk``` package.",
+    "lineNumber": 11,
+    "interface": false,
+    "extends": [
+      "Storage"
+    ]
+  },
+  {
+    "__docId__": 192,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 16,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "StorageOptions"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "see fields"
+      }
+    ]
+  },
+  {
+    "__docId__": 193,
+    "kind": "member",
+    "name": "region",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#region",
+    "access": "public",
+    "description": "AWS region",
+    "lineNumber": 20,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 194,
+    "kind": "member",
+    "name": "s3",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#s3",
+    "access": "public",
+    "description": "reference to driver object",
+    "lineNumber": 22,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 195,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#connect",
+    "access": "public",
+    "description": null,
+    "lineNumber": 31,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 196,
+    "kind": "method",
+    "name": "listItems",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#listItems",
+    "access": "public",
+    "description": "s3 list gives us last modified date; use that to efficiently check for updates",
+    "lineNumber": 41,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 197,
+    "kind": "method",
+    "name": "readAllRecords",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#readAllRecords",
+    "access": "public",
+    "description": null,
+    "lineNumber": 80,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 198,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#createRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 96,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 199,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#readRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 102,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 200,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#updateRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 125,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 201,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#deleteRecord",
+    "access": "public",
+    "description": null,
+    "lineNumber": 148,
+    "override": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 202,
+    "kind": "method",
+    "name": "updateCheckImpl",
+    "memberof": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage#updateCheckImpl",
+    "access": "public",
+    "description": null,
+    "lineNumber": 170,
+    "override": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 203,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/Storage.js",
+    "content": "\"use strict\";\n\nconst EventEmitter = require('events');\n\nconst ONE_MINUTE_MS = 60 * 1000\nconst FIFTEEN_MINUTES_MS = 15 * 60 * 1000;\nconst ONE_PERCENT_RATIO = 1.01;\n\n/**\n * @abstract\n * @public\n */\nclass Storage extends EventEmitter\n{\n  /**\n   * @param {StorageOptions} options see fields\n   */\n  constructor(options)\n  {\n    super();\n\n    /**\n     * id field of record\n     */\n    this.primaryKey = options.primaryKey || 'id';\n    /**\n     * Connection string for storage. e.g. for FSStorage, it is a path\n     */\n    this.connectionString = options.connectionString || '';\n    /**\n     * Name of collection. Derived from connection string if there is # based seperation.\n     */\n    this.collectionName = this.connectionString.substr(this.connectionString.indexOf('#') + 1);\n    this.connectionString = this.connectionString.substr(0, this.connectionString.indexOf('#'));\n    if (!this.connectionString)\n    {\n      delete this.connectionString;\n    }\n    /**\n     * Minimum duration between updates in ms\n     * @type {number}\n     */\n    this.updateInterval = options.updateInterval || ONE_MINUTE_MS;\n    /**\n     * Maximum duration between updates in ms\n     * @type {number}\n     */\n    this.updateIntervalMax = options.updateIntervalMax || FIFTEEN_MINUTES_MS;\n    /**\n     * Rate at which update checks are slowed down when there are no updates.\n     * @type {number}\n     */\n    this.updateIntervalSlowdownRate = options.updateIntervalSlowdownRate || ONE_PERCENT_RATIO;\n  }\n\n  /**\n   * Connect to data storage\n   */\n  async connect()\n  {\n\n  }\n\n  /**\n   * @return {Array<Record>}\n   * @abstract\n   */\n  async readAllRecords()\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async createRecord(record)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async readRecord(record)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async updateRecord(record)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * @abstract\n   */\n  async deleteRecord(record)\n  {\n    throw new Error('TODO: not immplemented');\n  }\n\n  /**\n   * Start checking for updates.\n   * Emit events when there are updates.\n   * Required for use with CachedCollection\n   */\n  startRecordUpdateCheck()\n  {\n    let currentTimeout = this.updateInterval;\n    async function checkUpdate()\n    {\n      /**\n       * update check timeout object\n       */\n      this.timeout = undefined;\n      let updated = false;\n      try\n      {\n        updated = await this.updateCheckImpl();\n      }\n      catch (e)\n      {\n        console.error(e);\n      }\n      if (updated || !this.updateIntervalSlowdownRate)\n      {\n        currentTimeout = this.updateInterval;\n      }\n      else\n      {\n        currentTimeout = Math.min(currentTimeout * this.updateIntervalSlowdownRate, this.updateIntervalMax);\n      }\n      this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout)\n        .unref();\n    }\n    this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout)\n      .unref();\n  }\n\n  /**\n   * Implmentation of update checking.\n   *\n   * Override this if storage has more efficient way of checking for updates.\n   *\n   * @abstract\n   */\n  async updateCheckImpl()\n  {\n    if (!this.bruteForceNotified)\n    {\n      console.log('WARNING: UPDATE IS NOT NATIVELY SUPPORTED BY STORAGE; USING BRUTE FORCE UPDATE. THIS MAY BE SLOWER AND LEAD TO GREATER BANDWIDTH USAGE.');\n      /**\n       * if there are no efficient way of checking update, make a warning notification once\n       */\n      this.bruteForceNotified = true;\n    }\n\n    let updated = false;\n    let records = await this.readAllRecords();\n    let newlist = {},\n      type, record = {},\n      list = this.lookup;\n    for (let record of records)\n    {\n      newlist[record[this.primaryKey]] = record;\n    }\n\n    if (!list)\n    {\n      this.lookup = newlist;\n      return false;\n    }\n\n    // check for deleted item\n    type = 'delete';\n    for (let item in list)\n    {\n      if (!newlist[item])\n      {\n        record[this.primaryKey] = item;\n        this.emit(type, record);\n        delete list[record[this.primaryKey]];\n        updated = true;\n      }\n    }\n\n    // check for new items\n    type = 'create';\n    for (let item in newlist)\n    {\n      if (!list[item])\n      {\n        record = newlist[item];\n        this.emit(type, record);\n        updated = true;\n        list[record[this.primaryKey]] = record;\n      }\n    }\n\n    // check for modified items\n    type = 'update';\n    for (let item in list)\n    {\n      if (JSON.stringify(list[item]) !== JSON.stringify(newlist[item]))\n      {\n        record = newlist[item];\n        this.emit(type, record);\n        updated = true;\n        list[record[this.primaryKey]] = record;\n      }\n    }\n    return updated;\n  }\n\n  /**\n   * Stop checking for updates.\n   * Required for use with CachedCollection\n   */\n  stopRecordUpdateCheck()\n  {\n    if (this.timeout)\n    {\n      clearTimeout(this.timeout);\n      this.timeout = undefined;\n    }\n  }\n\n}\n\nmodule.exports = Storage;\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/Storage.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 204,
+    "kind": "variable",
+    "name": "EventEmitter",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~EventEmitter",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/Storage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 205,
+    "kind": "variable",
+    "name": "ONE_MINUTE_MS",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~ONE_MINUTE_MS",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/Storage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 5,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 206,
+    "kind": "variable",
+    "name": "FIFTEEN_MINUTES_MS",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~FIFTEEN_MINUTES_MS",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/Storage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 6,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 207,
+    "kind": "variable",
+    "name": "ONE_PERCENT_RATIO",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~ONE_PERCENT_RATIO",
+    "access": "public",
+    "export": false,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/Storage.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 7,
+    "undocument": true,
+    "type": {
+      "types": [
+        "number"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 208,
+    "kind": "class",
+    "name": "Storage",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js",
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/Storage.js",
+    "importStyle": "Storage",
+    "description": "",
+    "lineNumber": 13,
+    "abstract": true,
+    "interface": false,
+    "extends": [
+      "EventEmitter"
+    ]
+  },
+  {
+    "__docId__": 209,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#constructor",
+    "access": "public",
+    "description": "",
+    "lineNumber": 18,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "StorageOptions"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "options",
+        "description": "see fields"
+      }
+    ]
+  },
+  {
+    "__docId__": 210,
+    "kind": "member",
+    "name": "primaryKey",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#primaryKey",
+    "access": "public",
+    "description": "id field of record",
+    "lineNumber": 25,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 211,
+    "kind": "member",
+    "name": "connectionString",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#connectionString",
+    "access": "public",
+    "description": "Connection string for storage. e.g. for FSStorage, it is a path",
+    "lineNumber": 29,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 212,
+    "kind": "member",
+    "name": "collectionName",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#collectionName",
+    "access": "public",
+    "description": "Name of collection. Derived from connection string if there is # based seperation.",
+    "lineNumber": 33,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 214,
+    "kind": "member",
+    "name": "updateInterval",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#updateInterval",
+    "access": "public",
+    "description": "Minimum duration between updates in ms",
+    "lineNumber": 43,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 215,
+    "kind": "member",
+    "name": "updateIntervalMax",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#updateIntervalMax",
+    "access": "public",
+    "description": "Maximum duration between updates in ms",
+    "lineNumber": 48,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 216,
+    "kind": "member",
+    "name": "updateIntervalSlowdownRate",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#updateIntervalSlowdownRate",
+    "access": "public",
+    "description": "Rate at which update checks are slowed down when there are no updates.",
+    "lineNumber": 53,
+    "type": {
+      "nullable": null,
+      "types": [
+        "number"
+      ],
+      "spread": false,
+      "description": null
+    }
+  },
+  {
+    "__docId__": 217,
+    "kind": "method",
+    "name": "connect",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#connect",
+    "access": "public",
+    "description": "Connect to data storage",
+    "lineNumber": 59,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 218,
+    "kind": "method",
+    "name": "readAllRecords",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#readAllRecords",
+    "access": "public",
+    "description": "",
+    "lineNumber": 68,
+    "return": {
+      "nullable": null,
+      "types": [
+        "Array<Record>"
+      ],
+      "spread": false,
+      "description": ""
+    },
+    "abstract": true,
+    "params": []
+  },
+  {
+    "__docId__": 219,
+    "kind": "method",
+    "name": "createRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#createRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 76,
+    "abstract": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 220,
+    "kind": "method",
+    "name": "readRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#readRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 84,
+    "abstract": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 221,
+    "kind": "method",
+    "name": "updateRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#updateRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 92,
+    "abstract": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 222,
+    "kind": "method",
+    "name": "deleteRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#deleteRecord",
+    "access": "public",
+    "description": "",
+    "lineNumber": 100,
+    "abstract": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 223,
+    "kind": "method",
+    "name": "startRecordUpdateCheck",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#startRecordUpdateCheck",
+    "access": "public",
+    "description": "Start checking for updates.\nEmit events when there are updates.\nRequired for use with CachedCollection",
+    "lineNumber": 110,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 224,
+    "kind": "member",
+    "name": "timeout",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#timeout",
+    "access": "public",
+    "description": "update check timeout object",
+    "lineNumber": 118,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 227,
+    "kind": "method",
+    "name": "updateCheckImpl",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": true,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#updateCheckImpl",
+    "access": "public",
+    "description": "Implmentation of update checking.\n\nOverride this if storage has more efficient way of checking for updates.",
+    "lineNumber": 150,
+    "abstract": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 228,
+    "kind": "member",
+    "name": "bruteForceNotified",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#bruteForceNotified",
+    "access": "public",
+    "description": "if there are no efficient way of checking update, make a warning notification once",
+    "lineNumber": 158,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 229,
+    "kind": "member",
+    "name": "lookup",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#lookup",
+    "access": "public",
+    "description": null,
+    "lineNumber": 173,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 230,
+    "kind": "method",
+    "name": "stopRecordUpdateCheck",
+    "memberof": "node-collections-boilerplate-nahid/storage/Storage.js~Storage",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "node-collections-boilerplate-nahid/storage/Storage.js~Storage#stopRecordUpdateCheck",
+    "access": "public",
+    "description": "Stop checking for updates.\nRequired for use with CachedCollection",
+    "lineNumber": 222,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 232,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/dynamoDecodeRecord.js",
+    "content": "\"use strict\"\n\nmodule.exports = function (record, primaryKey)\n{\n  let decoded = {};\n  for (let key in record)\n  {\n    let value = record[key].S;\n    if (key === primaryKey)\n    {\n      decoded[key] = value;\n    }\n    else\n    {\n      decoded[key] = JSON.parse(value);\n    }\n  }\n  return decoded;\n};\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/dynamoDecodeRecord.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 233,
+    "kind": "function",
+    "name": "dynamoDecodeRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/dynamoDecodeRecord.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/dynamoDecodeRecord.js~dynamoDecodeRecord",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/dynamoDecodeRecord.js",
+    "importStyle": "dynamoDecodeRecord",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "primaryKey",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 234,
+    "kind": "file",
+    "name": "node-collections-boilerplate-nahid/storage/dynamoEncodeRecord.js",
+    "content": "\"use strict\"\n\nmodule.exports = function (record, primaryKey)\n{\n  let update = {};\n  for (let key in record)\n  {\n    let value = record[key];\n    if (value !== undefined)\n    {\n      if (key === primaryKey)\n      {\n        update[key] = {\n          \"S\": value\n        };\n      }\n      else\n      {\n        update[key] = {\n          \"S\": JSON.stringify(value)\n        };\n      }\n    }\n  }\n  return update;\n};\n",
+    "static": true,
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/storage/dynamoEncodeRecord.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 235,
+    "kind": "function",
+    "name": "dynamoEncodeRecord",
+    "memberof": "node-collections-boilerplate-nahid/storage/dynamoEncodeRecord.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "node-collections-boilerplate-nahid/storage/dynamoEncodeRecord.js~dynamoEncodeRecord",
+    "access": "public",
+    "export": true,
+    "importPath": "node-collections-boilerplate/node-collections-boilerplate-nahid/storage/dynamoEncodeRecord.js",
+    "importStyle": "dynamoEncodeRecord",
+    "description": null,
+    "lineNumber": 3,
+    "undocument": true,
+    "params": [
+      {
+        "name": "record",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "primaryKey",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "kind": "index",
+    "content": "# Collections Boilerplate\n\n[![SCM](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/public.svg)](https://github.com/nahidakbar/node-collections-boilerplate-nahid)\n[![Build Status](https://travis-ci.org/nahidakbar/node-collections-boilerplate-nahid.svg?branch=master)](https://travis-ci.org/nahidakbar/node-collections-boilerplate-nahid)\n[![Documentation](https://nahidakbar.github.io/node-collections-boilerplate-nahid/badge.svg)](https://nahidakbar.github.io/node-collections-boilerplate-nahid/)\n[![Coverage](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/lines.svg)](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/)\n[![Coverage](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/functions.svg)](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/)\n[![Coverage](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/branches.svg)](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/)\n[![Coverage](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/statements.svg)](https://nahidakbar.github.io/node-collections-boilerplate-nahid/coverage/)\n\nReduce variability in manipulation of small to medium sized collections across\nall my node.js projects.\nCan justify spending time on ad-hoc pipelines and stuff when collections become\nvery big.\nHowever, until that actually happens, this should suffice.\n\nHere is a simple model of how things are organised:\n\n![Concept](doc/concept.png)\n\nKeep it fully tested so it can be used across production projects as well as\nprototypes.\n",
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"node-collections-boilerplate\",\n  \"version\": \"0.2.9\",\n  \"description\": \"Reduce variability in manipulation of small to medium sized collections.\",\n  \"main\": \"Collection.js\",\n  \"directories\": {\n    \"doc\": \"doc\"\n  },\n  \"scripts\": {\n    \"test\": \"jbn test\",\n    \"docs\": \"jbn docs\",\n    \"init\": \"jbn init\",\n    \"form\": \"jbn form\",\n    \"lint\": \"jbn lint\"\n  },\n  \"author\": \"Nahid Akbar <mail@nahidakbar.net> (http://nahidakbar.net/)\",\n  \"license\": \"MIT\",\n  \"devDependencies\": {\n    \"aws-sdk\": \"^2.111.0\",\n    \"aws-sdk-mock\": \"^1.7.0\",\n    \"elasticsearch\": \"^13.3.1\",\n    \"fs-extra\": \"^4.0.1\",\n    \"jbn\": \"latest\",\n    \"mongodb\": \"^2.2.31\"\n  },\n  \"engines\": {\n    \"node\": \">=8.4.0\"\n  }\n}\n",
+    "longname": "/home/travis/build/nahidakbar/node-collections-boilerplate-nahid/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]

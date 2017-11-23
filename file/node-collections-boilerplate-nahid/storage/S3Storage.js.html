@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">node-collections-boilerplate-nahid/storage/S3Storage.js | node-collections-boilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Reduce variability in manipulation of small to medium sized collections."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="node-collections-boilerplate"><meta property="twitter:description" content="Reduce variability in manipulation of small to medium sized collections."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection.html">CachedCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/Collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Collection">Collection</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#search">search</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch.html">ElasticSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch.html">MongoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch.html">NoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/Search.js~Search.html">Search</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Search">Search</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#storage">storage</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage.html">DynamoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier.html">DynamoStorageStreamNotifier</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage.html">FSStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage.html">MemoryStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage.html">MongoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage.html">S3Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/Storage.js~Storage.html">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoDecodeRecord">dynamoDecodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoEncodeRecord">dynamoEncodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Storage">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EventEmitter">EventEmitter</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">node-collections-boilerplate-nahid/storage/S3Storage.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&quot;use strict&quot;;
+
+const AWS = require(&apos;aws-sdk&apos;);
+const Storage = require(&apos;./Storage&apos;);
+
+/**
+ * Use a AWS S3 bucket as storage.
+ * 
+ * Requires ```aws-sdk``` package.
+ */
+class S3Storage extends Storage
+{
+  /**
+   * @param {StorageOptions} options see fields
+   */
+  constructor(options)
+  {
+    super(options)
+    /** AWS region */
+    this.region = options.region;
+    /** reference to driver object */
+    this.s3 = new AWS.S3({
+      apiVersion: &apos;2006-03-01&apos;,
+      endpoint: this.connectionString,
+      region: this.region,
+      s3ForcePathStyle: true
+    });
+  }
+
+  /** @override */
+  connect()
+  {
+    return new Promise((resolve, reject) =&gt;
+    {
+      this.listItems()
+        .then(list =&gt; resolve(this.list = list), reject);
+    });
+  }
+
+  /** s3 list gives us last modified date; use that to efficiently check for updates */
+  listItems()
+  {
+    const that = this;
+    return new Promise((resolve, reject) =&gt;
+    {
+      let output = {};
+
+      function iterate(ContinuationToken)
+      {
+        that.s3.listObjectsV2({
+          Bucket: that.collectionName,
+          ContinuationToken
+        }, (err, data) =&gt;
+        {
+          if (err)
+          {
+            return reject(err);
+          }
+
+          data.Contents.forEach(item =&gt;
+          {
+            output[item.Key] = item.LastModified;
+          });
+
+          if (!data.IsTruncated)
+          {
+            resolve(output);
+          }
+          else
+          {
+            iterate(data.NextContinuationToken);
+          }
+        });
+      }
+      iterate();
+    });
+  }
+
+  /** @override */
+  readAllRecords()
+  {
+    return new Promise((resolve, reject) =&gt;
+    {
+      Promise.all(Object.keys(this.list)
+          .map(item =&gt;
+          {
+            let query = {};
+            query[this.primaryKey] = item;
+            return this.readRecord(query);
+          }))
+        .then(resolve, reject);
+    });
+  }
+
+  /** @override */
+  createRecord(record)
+  {
+    return this.updateRecord(record);
+  }
+
+  /** @override */
+  readRecord(record)
+  {
+    return new Promise((resolve, reject) =&gt;
+    {
+      this.s3.getObject({
+        Bucket: this.collectionName,
+        Key: record[this.primaryKey]
+      }, (err, data) =&gt;
+      {
+        if (err)
+        {
+          reject(err);
+        }
+        else
+        {
+          this.list[record[this.primaryKey]] = data.LastModified;
+          resolve(JSON.parse(data.Body));
+        }
+      });
+    });
+  }
+
+  /** @override */
+  updateRecord(record)
+  {
+    return new Promise((resolve, reject) =&gt;
+    {
+      this.s3.upload({
+        Bucket: this.collectionName,
+        Key: record[this.primaryKey],
+        Body: JSON.stringify(record)
+      }, (err, data) =&gt;
+      {
+        if (err)
+        {
+          reject(err);
+        }
+        else
+        {
+          resolve(this.readRecord(record));
+        }
+      });
+    });
+  }
+
+  /** @override */
+  deleteRecord(record)
+  {
+    return new Promise((resolve, reject) =&gt;
+    {
+      this.s3.deleteObject({
+        Bucket: this.collectionName,
+        Key: record[this.primaryKey]
+      }, (err, data) =&gt;
+      {
+        if (err)
+        {
+          reject(err);
+        }
+        else
+        {
+          resolve(record);
+        }
+      });
+    });
+  }
+
+  /** @override */
+  async updateCheckImpl()
+  {
+    let updated = false;
+    let newlist = await this.listItems();
+    let list = this.list,
+      record = {};
+
+    // check for deleted item
+    for (let item in list)
+    {
+      if (!newlist[item])
+      {
+        record[this.primaryKey] = item;
+        this.emit(&apos;delete&apos;, record);
+        delete list[item];
+        updated = true;
+      }
+    }
+
+    // check for new items
+    for (let item in newlist)
+    {
+      if (!list[item])
+      {
+        record[this.primaryKey] = item;
+        this.readRecord(Object.assign({}, record))
+          .then(record =&gt;
+          {
+            this.emit(&apos;create&apos;, record);
+            updated = true;
+          }, x =&gt; x);
+        list[item] = newlist[item];
+      }
+    }
+
+    // check for modified items
+    for (let item in list)
+    {
+      if (list[item].getTime() !== newlist[item].getTime())
+      {
+        record[this.primaryKey] = item;
+        this.readRecord(Object.assign({}, record))
+          .then(record =&gt;
+          {
+            this.emit(&apos;update&apos;, record);
+            updated = true;
+          }, x =&gt; x);
+        list[item] = newlist[item];
+      }
+    }
+    return updated;
+  }
+}
+
+module.exports = S3Storage;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

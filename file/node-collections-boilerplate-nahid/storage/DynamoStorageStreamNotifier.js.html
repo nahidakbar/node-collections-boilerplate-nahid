@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js | node-collections-boilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Reduce variability in manipulation of small to medium sized collections."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="node-collections-boilerplate"><meta property="twitter:description" content="Reduce variability in manipulation of small to medium sized collections."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection.html">CachedCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/Collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Collection">Collection</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#search">search</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch.html">ElasticSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch.html">MongoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch.html">NoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/Search.js~Search.html">Search</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Search">Search</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#storage">storage</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage.html">DynamoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier.html">DynamoStorageStreamNotifier</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage.html">FSStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage.html">MemoryStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage.html">MongoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage.html">S3Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/Storage.js~Storage.html">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoDecodeRecord">dynamoDecodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoEncodeRecord">dynamoEncodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Storage">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EventEmitter">EventEmitter</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const AWS = require(&apos;aws-sdk&apos;);
+
+const dynamoDecodeRecord = require(&apos;./dynamoDecodeRecord&apos;);
+
+/**
+ * Implmentation of streams notification handler.
+ *
+ * Do not use directly. see useStreams option in DynamodbStorage.
+ */
+class DynamoStorageStreamNotifier
+{
+  constructor(storage)
+  {
+    this.storage = storage;
+    this.stream = new AWS.DynamoDBStreams({
+      apiVersion: &apos;2012-08-10&apos;,
+      region: storage.region
+    });
+  }
+
+  async connect()
+  {
+    // extract StreamArn with ListStreams
+    const streams = (await this.stream.listStreams({
+          TableName: this.storage.collectionName
+        })
+        .promise())
+      .Streams || [];
+    if (streams.length === 0)
+    {
+      throw new Error(`Stream is not found for table &apos;${this.storage.collectionName}&apos;.`);
+    }
+    this.streamArn = streams[0].StreamArn;
+
+    // find the latest shard id
+    let lastEvaluatedShardId = undefined;
+    let stream;
+    do {
+      stream = (await this.stream.describeStream({
+            StreamArn: this.streamArn,
+            ExclusiveStartShardId: lastEvaluatedShardId
+          })
+          .promise())
+        .StreamDescription;
+      lastEvaluatedShardId = stream.LastEvaluatedShardId;
+    } while (stream.LastEvaluatedShardId);
+    let shards = stream.Shards;
+    let shard = shards[shards.length - 1];
+    this.shardId = shard.ShardId;
+
+    // find the latest shard iterator
+    let iterator = await this.stream.getShardIterator({
+        StreamArn: this.streamArn,
+        ShardId: this.shardId,
+        ShardIteratorType: &apos;LATEST&apos;
+        //ShardIteratorType: &apos;TRIM_HORIZON&apos;
+      })
+      .promise();
+    this.shardIterator = iterator.ShardIterator;
+  }
+
+  async updateCheck()
+  {
+    if (!this.shardIterator)
+    {
+      // get next shard iterator
+      const shards = (await this.stream.describeStream({
+            StreamArn: this.streamArn,
+            ExclusiveStartShardId: this.shardId
+          })
+          .promise())
+        .StreamDescription.Shards;
+      if (shards.length &gt; 0)
+      {
+        this.shardId = shards[0].ShardId;
+        this.shardIterator = (await this.stream.getShardIterator({
+              StreamArn: this.streamArn,
+              ShardId: this.shardId,
+              ShardIteratorType: &apos;TRIM_HORIZON&apos;
+            })
+            .promise())
+          .ShardIterator;
+      }
+      else
+      {
+        return;
+      }
+    }
+    const records = await this.stream.getRecords({
+        ShardIterator: this.shardIterator
+      })
+      .promise();
+    for (let record of records.Records)
+    {
+      switch (record.eventName)
+      {
+      case &apos;INSERT&apos;:
+        this.storage.emit(&apos;create&apos;, dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));
+        break;
+      case &apos;MODIFY&apos;:
+        this.storage.emit(&apos;update&apos;, dynamoDecodeRecord(record.dynamodb.NewImage, this.storage.primaryKey));
+        break;
+      case &apos;REMOVE&apos;:
+        this.storage.emit(&apos;delete&apos;, dynamoDecodeRecord(record.dynamodb.Keys, this.storage.primaryKey));
+        break;
+      default:
+        console.log(&apos;[ERROR] TODO: process&apos;, record);
+      }
+    }
+    this.shardIterator = records.NextShardIterator;
+    if (records.Records.length &gt; 0)
+    {
+      await this.updateCheck();
+    }
+  }
+}
+
+module.exports = DynamoStorageStreamNotifier;
+
+/*
+(async function()
+{
+  const notifier = new Notifier({
+    region: &apos;ap-southeast-2&apos;,
+    collectionName: &apos;test2&apos;,
+    primaryKey: &apos;id&apos;,
+    emit: console.log.bind(console)
+  });
+  await notifier.initialise();
+
+  async function checkForUpdate()
+  {
+    await notifier.checkForUpdate();
+    setTimeout(checkForUpdate, 1000)
+  }
+
+  checkForUpdate()
+
+})();
+*/
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

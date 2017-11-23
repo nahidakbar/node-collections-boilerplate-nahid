@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">node-collections-boilerplate-nahid/search/MongoSearch.js | node-collections-boilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Reduce variability in manipulation of small to medium sized collections."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="node-collections-boilerplate"><meta property="twitter:description" content="Reduce variability in manipulation of small to medium sized collections."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection.html">CachedCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/Collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Collection">Collection</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#search">search</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch.html">ElasticSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch.html">MongoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch.html">NoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/Search.js~Search.html">Search</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Search">Search</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#storage">storage</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage.html">DynamoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier.html">DynamoStorageStreamNotifier</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage.html">FSStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage.html">MemoryStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage.html">MongoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage.html">S3Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/Storage.js~Storage.html">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoDecodeRecord">dynamoDecodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoEncodeRecord">dynamoEncodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Storage">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EventEmitter">EventEmitter</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">node-collections-boilerplate-nahid/search/MongoSearch.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * @file
+ * 
+ * @author Nahid Akbar
+ * @year 2016
+ * @copyright Data61 -
+ *            Commonwealth Scientific and Industrial Research Organisation (CSIRO) -
+ *            Australian Government. All rights reserved.
+ */
+
+&quot;use strict&quot;;
+
+const Search = require(&apos;./Search&apos;);
+const MongoStorage = require(&apos;../storage/MongoStorage&apos;);
+
+/**
+ * Search using mongodb query engine.
+ * Requres ```mongodb``` package.
+ */
+class MongoSearch extends Search
+{
+  /**
+   * @override
+   */
+  initialise(searchMeta, records)
+  {
+    const searchWeights = searchMeta.searchWeights || {};
+    let collection = this.collection;
+    return new Promise((resolve, reject) =&gt;
+    {
+      function search()
+      {
+        let straight = {};
+        let text = {};
+        let textWeights = {};
+        for (let field in searchMeta.fields)
+        {
+          if (searchMeta.fields[field].dummy)
+          {
+            continue;
+          }
+          if (searchMeta.fields[field].searchField)
+          {
+            straight[searchMeta.fields[field].searchField] = 1;
+          }
+          else
+          {
+            straight[field] = 1;
+          }
+          if (searchMeta.fields[field].filters.indexOf(&apos;search&apos;) !== -1)
+          {
+            text[field] = &apos;text&apos;;
+            textWeights[field] = 1;
+          }
+        }
+        for (let field in searchWeights)
+        {
+          text[field] = &apos;text&apos;;
+          textWeights[field] = searchWeights[field];
+        }
+        let promises = [];
+        for (let field in straight)
+        {
+          let f = {};
+          f[field] = straight[field];
+
+          promises.push(collection.createIndex(f, {
+            background: true,
+            name: field + &apos;_straight&apos;
+          }));
+        }
+        console.log(&quot;INDEX&quot;, &quot;TEXT&quot;, text, textWeights, &quot;NORMAL&quot;, straight);
+        if (Object.keys(text)
+          .length &gt; 0)
+        {
+          promises.push(collection.createIndex(text, {
+            background: true,
+            name: &apos;text&apos;,
+            weights: textWeights
+          }));
+        }
+        Promise.all(promises)
+          .then(resolve, reject);
+      }
+      //resolve();
+      collection.dropIndexes(() =&gt;
+      {
+        collection.removeMany({}, () =&gt;
+        {
+          if (records.length &gt; 0)
+          {
+            collection.insertMany(records, {}, search);
+          }
+          else
+          {
+            search();
+          }
+        });
+      });
+    });
+  }
+
+  /**
+   * @override
+   */
+  searchRecords(inquery, limit = 0)
+  {
+    const collection = this.collection;
+    const primaryKey = this.primaryKey;
+    return new Promise((resolve, reject) =&gt;
+    {
+      let query = [],
+        f, hasTextSearch = false;
+
+      inquery.filter.forEach(infilter =&gt;
+      {
+        switch (infilter.filter)
+        {
+        case &apos;equals&apos;:
+          f = {};
+          f[infilter.field] = infilter.value[0];
+          query.push(f);
+          break;
+        case &apos;within&apos;:
+          f = {};
+          f[infilter.field] = {
+            $in: infilter.value
+          };
+          query.push(f);
+          break;
+        case &apos;regex&apos;:
+          f = {};
+          f[infilter.field] = {
+            $regex: infilter.value[0]
+          };
+          query.push(f);
+          break;
+        case &apos;search&apos;:
+          hasTextSearch = true;
+          f = {
+            $text: {
+              $search: infilter.value[0],
+              $caseSensitive: false
+            }
+          };
+          query.push(f);
+          break;
+        default:
+          console.error(&apos;Unhandelled Filter&apos;, infilter);
+        }
+      });
+
+      if (query.length === 0)
+      {
+        query = {};
+      }
+      else if (query.length === 1)
+      {
+        query = query[0];
+      }
+      else
+      {
+        query = {
+          $and: query
+        };
+      }
+
+      let project = {
+        _id: 0
+      };
+      if (typeof primaryKey === &apos;string&apos;)
+      {
+        project[primaryKey] = 1;
+      }
+      else if (typeof primaryKey === &apos;object&apos;)
+      {
+        for (let key in primaryKey)
+        {
+          project[key] = 1;
+        }
+      }
+
+      let sort = {};
+      if (inquery.sort)
+      {
+        console.log(inquery.sort, hasTextSearch);
+        if (inquery.sort === &apos;search&apos; &amp;&amp; hasTextSearch)
+        {
+          project.score = {
+            $meta: &quot;textScore&quot;
+          };
+          sort.score = {
+            $meta: &quot;textScore&quot;
+          };
+        }
+        else
+        {
+          sort[inquery.sort] = inquery.order === &apos;dsc&apos; ? -1 : 1;
+        }
+      }
+
+      console.log(&apos;MONGO QUERY&apos;, query, &apos;PROJECT&apos;, project, &apos;SORT&apos;, sort);
+
+      let search = collection.find(query)
+        .project(project)
+        .sort(sort);
+
+      if (limit)
+      {
+        search = search.limit(limit);
+      }
+
+      search.map(x =&gt; (typeof primaryKey === &apos;string&apos;) ? x[primaryKey] : x)
+        .toArray()
+        .then(resolve, reject);
+    });
+  }
+
+  // rest is the same as mongo storage
+
+}
+
+module.exports = MongoSearch;
+
+MongoSearch.prototype.connect = MongoStorage.prototype.connect;
+MongoSearch.prototype.createRecord = MongoStorage.prototype.createRecord;
+MongoSearch.prototype.readRecord = MongoStorage.prototype.readRecord;
+MongoSearch.prototype.updateRecord = MongoStorage.prototype.updateRecord;
+MongoSearch.prototype.deleteRecord = MongoStorage.prototype.deleteRecord;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

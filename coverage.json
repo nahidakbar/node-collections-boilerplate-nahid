@@ -1,0 +1,134 @@
+{
+  "coverage": "76.21%",
+  "expectCount": 164,
+  "actualCount": 125,
+  "files": {
+    "node-collections-boilerplate-nahid/CachedCollection.js": {
+      "expectCount": 9,
+      "actualCount": 8,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "node-collections-boilerplate-nahid/Collection.js": {
+      "expectCount": 16,
+      "actualCount": 16,
+      "undocumentLines": []
+    },
+    "node-collections-boilerplate-nahid/search/ElasticSearch.js": {
+      "expectCount": 11,
+      "actualCount": 9,
+      "undocumentLines": [
+        13,
+        14
+      ]
+    },
+    "node-collections-boilerplate-nahid/search/MongoSearch.js": {
+      "expectCount": 5,
+      "actualCount": 3,
+      "undocumentLines": [
+        13,
+        14
+      ]
+    },
+    "node-collections-boilerplate-nahid/search/NoSearch.js": {
+      "expectCount": 8,
+      "actualCount": 7,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "node-collections-boilerplate-nahid/search/Search.js": {
+      "expectCount": 11,
+      "actualCount": 11,
+      "undocumentLines": []
+    },
+    "node-collections-boilerplate-nahid/storage/DynamoStorage.js": {
+      "expectCount": 18,
+      "actualCount": 12,
+      "undocumentLines": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        49
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js": {
+      "expectCount": 11,
+      "actualCount": 1,
+      "undocumentLines": [
+        1,
+        3,
+        12,
+        14,
+        15,
+        21,
+        33,
+        49,
+        59,
+        62
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/FSStorage.js": {
+      "expectCount": 14,
+      "actualCount": 11,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/MemoryStorage.js": {
+      "expectCount": 9,
+      "actualCount": 7,
+      "undocumentLines": [
+        3,
+        11
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/MongoStorage.js": {
+      "expectCount": 12,
+      "actualCount": 9,
+      "undocumentLines": [
+        3,
+        4,
+        6
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/S3Storage.js": {
+      "expectCount": 14,
+      "actualCount": 12,
+      "undocumentLines": [
+        3,
+        4
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/Storage.js": {
+      "expectCount": 24,
+      "actualCount": 19,
+      "undocumentLines": [
+        3,
+        5,
+        6,
+        7,
+        173
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/dynamoDecodeRecord.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "node-collections-boilerplate-nahid/storage/dynamoEncodeRecord.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    }
+  }
+}

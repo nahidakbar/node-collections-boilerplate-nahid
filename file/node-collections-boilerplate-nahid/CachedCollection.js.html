@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../">
+  <title data-ice="title">node-collections-boilerplate-nahid/CachedCollection.js | node-collections-boilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Reduce variability in manipulation of small to medium sized collections."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="node-collections-boilerplate"><meta property="twitter:description" content="Reduce variability in manipulation of small to medium sized collections."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection.html">CachedCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/Collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Collection">Collection</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#search">search</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch.html">ElasticSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch.html">MongoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch.html">NoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/Search.js~Search.html">Search</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Search">Search</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#storage">storage</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage.html">DynamoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier.html">DynamoStorageStreamNotifier</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage.html">FSStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage.html">MemoryStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage.html">MongoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage.html">S3Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/Storage.js~Storage.html">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoDecodeRecord">dynamoDecodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoEncodeRecord">dynamoEncodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Storage">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EventEmitter">EventEmitter</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">node-collections-boilerplate-nahid/CachedCollection.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&quot;use strict&quot;;
+
+const Collection = require(&apos;./Collection&apos;);
+
+/**
+ * In memory version of collection.
+ * 
+ * Since all the data is in memory, it also does basic facets analysis.
+ */
+class CachedCollection extends Collection
+{
+  /**
+   * Builds up records in mmory.
+   * Sets up event listeners to keep everything up to date.
+   * @override
+   */
+  async initialise()
+  {
+    let records = await super.initialise();
+    /**
+     * Mappint of primary key to records
+     * @type {Map&lt;string,Record&gt;}
+     */
+    this.lookup = {};
+
+    // populate lookup list
+    for (let record of records)
+    {
+      let pkValue = record[this.primaryKey]
+      this.lookup[pkValue] = record;
+    }
+
+    // set up listeners
+    this.storage.on(&apos;create&apos;, record =&gt;
+    {
+      console.log(&apos;NOTIFY CREATED&apos;, this.collectionName, record[this.primaryKey]);
+      this.lookup[record[this.primaryKey]] = record;
+      this.search.createRecord(record)
+        .then(x =&gt; x, console.log.bind(console));
+    });
+    this.storage.on(&apos;update&apos;, record =&gt;
+    {
+      console.log(&apos;NOTIFY UPDATED&apos;, this.collectionName, record[this.primaryKey]);
+      this.lookup[record[this.primaryKey]] = record;
+      this.search.updateRecord(record)
+        .then(x =&gt; x, console.log.bind(console));
+    });
+
+    this.storage.on(&apos;delete&apos;, record =&gt;
+    {
+      console.log(&apos;NOTIFY DELETED&apos;, this.collectionName, record[this.primaryKey]);
+      delete this.lookup[record[this.primaryKey]];
+      this.search.deleteRecord(record)
+        .then(x =&gt; x, console.log.bind(console));
+    });
+
+    // install updater
+    // see if storage has some clever way of receiving updates
+    this.storage.startRecordUpdateCheck()
+
+    return records;
+  }
+
+  /**
+   * @override
+   */
+  createRecord(record)
+  {
+    this.lookup[record[this.primaryKey]] = record;
+    return super.createRecord(record);
+  }
+
+  /**
+   * @override
+   */
+  async readRecord(record)
+  {
+    let read = this.lookup[record[this.primaryKey]];
+    if (!read)
+    {
+      record = await super.readRecord(record);
+      if (record)
+      {
+        this.lookup[record[this.primaryKey]] = record;
+        this.search.createRecord(record)
+          .then(x =&gt; x, console.log.bind(console));
+      }
+      return record;
+    }
+    else
+    {
+      return read;
+    }
+  }
+
+  /**
+   * @override
+   */
+  updateRecord(record)
+  {
+    this.lookup[record[this.primaryKey]] = record;
+    return super.updateRecord(record);
+  }
+
+  /**
+   * @override
+   */
+  deleteRecord(record)
+  {
+    try
+    {
+      delete this.lookup[record[this.primaryKey]];
+    }
+    catch (e)
+    {
+      console.log(e)
+    }
+    return super.deleteRecord(record);
+  }
+
+  /**
+   * @override
+   */
+  searchRecords(query)
+  {
+    return new Promise((resolve, reject) =&gt;
+    {
+      let offset = query.offset;
+      delete query.offset;
+      let limit = query.limit;
+      delete query.limit;
+      this.search.searchRecords(query)
+        .then(records =&gt;
+        {
+          let results = {
+            results: records,
+            total: records.length,
+            offset: offset,
+          };
+
+          if (query.returnFacets)
+          {
+            let facets = {};
+            for (let facet of this.searchMeta.facets)
+            {
+              facets[facet] = {};
+            }
+            for (let id of records)
+            {
+              let record = this.lookup[id];
+              for (let facet of this.searchMeta.facets)
+              {
+                let facetValues = (record[facet] || []);
+                if (typeof facetValues === &apos;string&apos;)
+                {
+                  let value = facetValues;
+                  facets[facet][value] = (facets[facet][value] || 0) + 1;
+                }
+                else
+                {
+                  for (let value of facetValues)
+                  {
+                    facets[facet][value] = (facets[facet][value] || 0) + 1;
+                  }
+                }
+              }
+            }
+            results.facets = facets;
+          }
+
+          if (query.sort)
+          {
+            results.sort = query.sort;
+            results.order = query.order;
+          }
+          records = records.splice(offset, limit);
+          records = records.map(id =&gt;
+          {
+            let query = {};
+            query[this.primaryKey] = id;
+            return this.readRecord(query);
+          });
+          Promise.all(records)
+            .then(records =&gt;
+            {
+              results.results = records.map(x =&gt; this.stripRecord(x, query.extra));
+              resolve(results);
+            }, reject);
+        }, reject);
+    });
+  }
+
+}
+
+module.exports = CachedCollection;
+
+CachedCollection.create = Collection.create;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

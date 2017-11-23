@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">node-collections-boilerplate-nahid/storage/DynamoStorage.js | node-collections-boilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Reduce variability in manipulation of small to medium sized collections."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="node-collections-boilerplate"><meta property="twitter:description" content="Reduce variability in manipulation of small to medium sized collections."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection.html">CachedCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/Collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Collection">Collection</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#search">search</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch.html">ElasticSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch.html">MongoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch.html">NoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/Search.js~Search.html">Search</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Search">Search</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#storage">storage</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage.html">DynamoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier.html">DynamoStorageStreamNotifier</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage.html">FSStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage.html">MemoryStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage.html">MongoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage.html">S3Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/Storage.js~Storage.html">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoDecodeRecord">dynamoDecodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoEncodeRecord">dynamoEncodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Storage">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EventEmitter">EventEmitter</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">node-collections-boilerplate-nahid/storage/DynamoStorage.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&quot;use strict&quot;;
+
+const AWS = require(&apos;aws-sdk&apos;);
+const Storage = require(&apos;./Storage&apos;);
+
+const dynamoDecodeRecord = require(&apos;./dynamoDecodeRecord&apos;);
+const dynamoEncodeRecord = require(&apos;./dynamoEncodeRecord&apos;);
+const StreamsNotifier = require(&apos;./DynamoStorageStreamNotifier&apos;);
+
+/**
+ * Use a AWS DynamoDB table as storage.
+ *
+ * Pretty pointless storage system but have some legacy data in it.
+ *
+ * Needs ```aws-sdk``` package.
+ */
+class DynamoStorage extends Storage
+{
+  /**
+   * @param {StorageOptions} options see fields
+   */
+  constructor(options = {})
+  {
+    super(options)
+    /** AWS region */
+    this.region = options.region || undefined;
+    /** reference to driver object */
+    this.db = new AWS.DynamoDB({
+      apiVersion: &apos;2012-08-10&apos;,
+      maxRetries: 99 * 1024,
+      endpoint: this.connectionString ? new AWS.Endpoint(this.connectionString) : undefined,
+      region: this.region
+    });
+
+    /**
+     * Set it to true to use streams for receiving data updates.
+     * @type {boolean}
+     */
+    this.useStreams = options.useStreams || false;
+    if (this.useStreams)
+    {
+      /** @private */
+      this.notifier = new StreamsNotifier(this);
+      /** @private */
+      this.updateCheckImpl = this.notifier.updateCheck.bind(this.notifier);
+    }
+  }
+
+  async connect()
+  {
+    if (this.notifier)
+    {
+      await this.notifier.connect();
+    }
+    await super.connect();
+  }
+
+  /** @override */
+  readAllRecords()
+  {
+    const that = this;
+    return new Promise((resolve, reject) =&gt;
+    {
+      let items = [];
+
+      function scan(LastEvaluatedKey = undefined)
+      {
+        const request = {
+          TableName: that.collectionName,
+        }
+        if (LastEvaluatedKey)
+        {
+          request.ExclusiveStartKey = LastEvaluatedKey;
+        }
+
+        that.db.scan(request, (err, data) =&gt;
+        {
+          if (err)
+          {
+            reject(err);
+          }
+          else
+          {
+            items = items.concat(data.Items)
+            if (data.LastEvaluatedKey)
+            {
+              scan(data.LastEvaluatedKey);
+            }
+            else
+            {
+              items = items.map(record =&gt;
+              {
+                return dynamoDecodeRecord(record, that.primaryKey);
+              });
+              resolve(items);
+            }
+          }
+        });
+      }
+      scan();
+    });
+  }
+
+  /** @override */
+  createRecord(record)
+  {
+    return this.updateRecord(record);
+  }
+
+  /** @override */
+  async readRecord(record)
+  {
+    const query = {
+      TableName: this.collectionName,
+      Key: {}
+    };
+    query.Key[this.primaryKey] = {
+      &quot;S&quot;: record[this.primaryKey]
+    };
+    let data = await this.db.getItem(query)
+      .promise();
+
+    data = data.Item;
+    // if (!data)
+    // {
+    //   throw new Error(&apos;not found&apos;);
+    // }
+    return dynamoDecodeRecord(data, this.primaryKey);
+  }
+
+  /** @override */
+  async updateRecord(record)
+  {
+    await this.db.putItem({
+        TableName: this.collectionName,
+        Item: dynamoEncodeRecord(record, this.primaryKey)
+      })
+      .promise();
+    return record;
+  }
+
+  /** @override */
+  async deleteRecord(record)
+  {
+    const query = {
+      TableName: this.collectionName,
+      Key: {}
+    };
+    query.Key[this.primaryKey] = {
+      &quot;S&quot;: record[this.primaryKey]
+    };
+    return await this.db.deleteItem(query)
+      .promise();
+  }
+}
+
+module.exports = DynamoStorage;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

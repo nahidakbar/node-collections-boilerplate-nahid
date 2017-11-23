@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">node-collections-boilerplate-nahid/storage/Storage.js | node-collections-boilerplate</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Reduce variability in manipulation of small to medium sized collections."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="node-collections-boilerplate"><meta property="twitter:description" content="Reduce variability in manipulation of small to medium sized collections."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/CachedCollection.js~CachedCollection.html">CachedCollection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/Collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Collection">Collection</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#search">search</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/ElasticSearch.js~ElasticSearch.html">ElasticSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/MongoSearch.js~MongoSearch.html">MongoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/NoSearch.js~NoSearch.html">NoSearch</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/search/Search.js~Search.html">Search</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Search">Search</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#storage">storage</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorage.js~DynamoStorage.html">DynamoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/DynamoStorageStreamNotifier.js~DynamoStorageStreamNotifier.html">DynamoStorageStreamNotifier</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/FSStorage.js~FSStorage.html">FSStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MemoryStorage.js~MemoryStorage.html">MemoryStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/MongoStorage.js~MongoStorage.html">MongoStorage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/S3Storage.js~S3Storage.html">S3Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/node-collections-boilerplate-nahid/storage/Storage.js~Storage.html">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoDecodeRecord">dynamoDecodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-dynamoEncodeRecord">dynamoEncodeRecord</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Storage">Storage</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-EventEmitter">EventEmitter</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">node-collections-boilerplate-nahid/storage/Storage.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&quot;use strict&quot;;
+
+const EventEmitter = require(&apos;events&apos;);
+
+const ONE_MINUTE_MS = 60 * 1000
+const FIFTEEN_MINUTES_MS = 15 * 60 * 1000;
+const ONE_PERCENT_RATIO = 1.01;
+
+/**
+ * @abstract
+ * @public
+ */
+class Storage extends EventEmitter
+{
+  /**
+   * @param {StorageOptions} options see fields
+   */
+  constructor(options)
+  {
+    super();
+
+    /**
+     * id field of record
+     */
+    this.primaryKey = options.primaryKey || &apos;id&apos;;
+    /**
+     * Connection string for storage. e.g. for FSStorage, it is a path
+     */
+    this.connectionString = options.connectionString || &apos;&apos;;
+    /**
+     * Name of collection. Derived from connection string if there is # based seperation.
+     */
+    this.collectionName = this.connectionString.substr(this.connectionString.indexOf(&apos;#&apos;) + 1);
+    this.connectionString = this.connectionString.substr(0, this.connectionString.indexOf(&apos;#&apos;));
+    if (!this.connectionString)
+    {
+      delete this.connectionString;
+    }
+    /**
+     * Minimum duration between updates in ms
+     * @type {number}
+     */
+    this.updateInterval = options.updateInterval || ONE_MINUTE_MS;
+    /**
+     * Maximum duration between updates in ms
+     * @type {number}
+     */
+    this.updateIntervalMax = options.updateIntervalMax || FIFTEEN_MINUTES_MS;
+    /**
+     * Rate at which update checks are slowed down when there are no updates.
+     * @type {number}
+     */
+    this.updateIntervalSlowdownRate = options.updateIntervalSlowdownRate || ONE_PERCENT_RATIO;
+  }
+
+  /**
+   * Connect to data storage
+   */
+  async connect()
+  {
+
+  }
+
+  /**
+   * @return {Array&lt;Record&gt;}
+   * @abstract
+   */
+  async readAllRecords()
+  {
+    throw new Error(&apos;TODO: not immplemented&apos;);
+  }
+
+  /**
+   * @abstract
+   */
+  async createRecord(record)
+  {
+    throw new Error(&apos;TODO: not immplemented&apos;);
+  }
+
+  /**
+   * @abstract
+   */
+  async readRecord(record)
+  {
+    throw new Error(&apos;TODO: not immplemented&apos;);
+  }
+
+  /**
+   * @abstract
+   */
+  async updateRecord(record)
+  {
+    throw new Error(&apos;TODO: not immplemented&apos;);
+  }
+
+  /**
+   * @abstract
+   */
+  async deleteRecord(record)
+  {
+    throw new Error(&apos;TODO: not immplemented&apos;);
+  }
+
+  /**
+   * Start checking for updates.
+   * Emit events when there are updates.
+   * Required for use with CachedCollection
+   */
+  startRecordUpdateCheck()
+  {
+    let currentTimeout = this.updateInterval;
+    async function checkUpdate()
+    {
+      /**
+       * update check timeout object
+       */
+      this.timeout = undefined;
+      let updated = false;
+      try
+      {
+        updated = await this.updateCheckImpl();
+      }
+      catch (e)
+      {
+        console.error(e);
+      }
+      if (updated || !this.updateIntervalSlowdownRate)
+      {
+        currentTimeout = this.updateInterval;
+      }
+      else
+      {
+        currentTimeout = Math.min(currentTimeout * this.updateIntervalSlowdownRate, this.updateIntervalMax);
+      }
+      this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout)
+        .unref();
+    }
+    this.timeout = setTimeout(checkUpdate.bind(this), currentTimeout)
+      .unref();
+  }
+
+  /**
+   * Implmentation of update checking.
+   *
+   * Override this if storage has more efficient way of checking for updates.
+   *
+   * @abstract
+   */
+  async updateCheckImpl()
+  {
+    if (!this.bruteForceNotified)
+    {
+      console.log(&apos;WARNING: UPDATE IS NOT NATIVELY SUPPORTED BY STORAGE; USING BRUTE FORCE UPDATE. THIS MAY BE SLOWER AND LEAD TO GREATER BANDWIDTH USAGE.&apos;);
+      /**
+       * if there are no efficient way of checking update, make a warning notification once
+       */
+      this.bruteForceNotified = true;
+    }
+
+    let updated = false;
+    let records = await this.readAllRecords();
+    let newlist = {},
+      type, record = {},
+      list = this.lookup;
+    for (let record of records)
+    {
+      newlist[record[this.primaryKey]] = record;
+    }
+
+    if (!list)
+    {
+      this.lookup = newlist;
+      return false;
+    }
+
+    // check for deleted item
+    type = &apos;delete&apos;;
+    for (let item in list)
+    {
+      if (!newlist[item])
+      {
+        record[this.primaryKey] = item;
+        this.emit(type, record);
+        delete list[record[this.primaryKey]];
+        updated = true;
+      }
+    }
+
+    // check for new items
+    type = &apos;create&apos;;
+    for (let item in newlist)
+    {
+      if (!list[item])
+      {
+        record = newlist[item];
+        this.emit(type, record);
+        updated = true;
+        list[record[this.primaryKey]] = record;
+      }
+    }
+
+    // check for modified items
+    type = &apos;update&apos;;
+    for (let item in list)
+    {
+      if (JSON.stringify(list[item]) !== JSON.stringify(newlist[item]))
+      {
+        record = newlist[item];
+        this.emit(type, record);
+        updated = true;
+        list[record[this.primaryKey]] = record;
+      }
+    }
+    return updated;
+  }
+
+  /**
+   * Stop checking for updates.
+   * Required for use with CachedCollection
+   */
+  stopRecordUpdateCheck()
+  {
+    if (this.timeout)
+    {
+      clearTimeout(this.timeout);
+      this.timeout = undefined;
+    }
+  }
+
+}
+
+module.exports = Storage;
+</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.0.4)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>
